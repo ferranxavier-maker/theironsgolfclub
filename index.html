@@ -2336,7 +2336,6 @@ function renderFichaJugador(el, apodo){
   // alto y Titulos no tiene que estirarse tanto para cuadrar por abajo.
   h += '<div style="max-width:200px;margin:0 auto;width:100%">' + foto + '</div>';
   h += '<div class="ficha-filas" style="padding-top:12px">';
-  h += dato('Nombre', p.nombre || '—');
   h += dato('Edad', edad);
   // Clic en el año: enseña la fecha exacta del alta (el bautizo) y vuelve.
   if(p.alta){
@@ -2664,7 +2663,7 @@ function renderEquipo(el){
 
   function cg(hasta){
     return '<colgroup>'
-      +'<col style="width:'+W.nick+'px"><col style="width:'+W.nom+'px">'
+      +'<col style="width:'+W.nick+'px">'
       +'<col style="width:'+W.desde+'px"><col style="width:'+W.edad+'px"><col style="width:'+W.talla+'px">'
       +(hasta?'<col style="width:'+W.hasta+'px">':'')
       +'</colgroup>';
@@ -2674,7 +2673,6 @@ function renderEquipo(el){
     const edadTxt=mediaEdad!==null?'Edad<br><span style="font-weight:400;font-size:10px">('+mediaEdad+')</span>':'Edad';
     return '<thead><tr>'
       +'<th style="'+thL+'">Nickname</th>'
-      +'<th style="'+thL+'">Nombre</th>'
       +'<th style="'+thC+'">Desde</th>'
       +'<th style="'+thC+'">'+edadTxt+'</th>'
       +'<th style="'+thC+'">Talla</th>'
@@ -2689,7 +2687,6 @@ function renderEquipo(el){
       const badge='<span style="display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;border-radius:3px;background:'+(COLORS[p.apodo]||'#e5e7eb')+';font-size:9px;font-weight:700;color:#333;margin-right:5px;flex-shrink:0">'+p.num+'</span>';
       t+='<tr style="background:'+bg+';cursor:pointer" onclick="_abrirFicha(\''+p.apodo.replace(/'/g,"\\'")+'\')" title="Ver ficha de '+p.apodo+'">';
       t+='<td style="'+tdL+'">'+badge+'<strong style="border-bottom:1px dotted #9ca3af">'+p.apodo+'</strong></td>';
-      t+='<td style="'+tdL+'color:#444">'+p.nombre+'</td>';
       t+='<td style="'+tdC+'">'+p.desde+'</td>';
       t+='<td style="'+tdC+'">'+calcEdad(p.nac)+'</td>';
       t+='<td style="'+tdC+'">'+(p.talla?'<span style="font-size:10px;font-weight:600;color:#6d28d9;background:#f5f3ff;padding:2px 6px;border-radius:8px">'+p.talla+'</span>':'—')+'</td>';
@@ -2699,7 +2696,7 @@ function renderEquipo(el){
   }
 
 
-  const wA=W.nick+W.nom+W.desde+W.edad+W.talla;
+  const wA=W.nick+W.desde+W.edad+W.talla;
 
   const mediaEdad = lista => {
     const e = lista.map(p=>calcEdad(p.nac)).filter(x=>x!=='—');
