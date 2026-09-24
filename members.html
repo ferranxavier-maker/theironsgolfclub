@@ -58,7 +58,12 @@
     height: calc(var(--franja) + env(safe-area-inset-top, 0px));
     padding-top: env(safe-area-inset-top, 0px);
   }
-  .franja .contenedor { height: 100%; display: flex; justify-content: flex-end; align-items: center; }
+  .franja .contenedor { height: 100%; display: flex; justify-content: space-between; align-items: center; }
+  .franja .franja-marca {
+    color: var(--hueso); font-family: var(--escudo); font-weight: 700;
+    font-size: 24px; letter-spacing: .06em; margin-right: 0; padding: 4px 0;
+  }
+  .franja .franja-marca:hover { color: #C9A887; }
   .franja nav { display: flex; gap: 40px; }
   .franja a {
     text-decoration: none; color: #C9A887;
@@ -215,6 +220,7 @@
 
 <header class="franja">
   <div class="contenedor">
+    <a class="franja-marca" href="index.html" aria-label="THE IRONS, ir a la portada">The Irons</a>
     <nav aria-label="Principal">
       <a href="#" data-pendiente="página de tienda">Shop</a>
       <a href="members.html" aria-current="page">Members</a>

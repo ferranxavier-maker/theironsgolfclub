@@ -9,7 +9,7 @@
 <!-- <meta name="robots" content="noindex, nofollow"> -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700&family=Barlow:wght@300;400;500&family=Saira+Extra+Condensed:wght@700&display=swap" rel="stylesheet">
 <style>
   :root {
     --negro: #000000;
@@ -20,6 +20,7 @@
     --bronce: #8A6A4E;
 
     --condensada: "Barlow Condensed", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+    --escudo: "Saira Extra Condensed", "Barlow Condensed", "Arial Narrow", Arial, sans-serif;
     --sans: "Barlow", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
     --ancho: 1280px;
@@ -57,7 +58,12 @@
     height: calc(var(--franja) + env(safe-area-inset-top, 0px));
     padding-top: env(safe-area-inset-top, 0px);
   }
-  .franja .contenedor { height: 100%; display: flex; justify-content: flex-end; align-items: center; }
+  .franja .contenedor { height: 100%; display: flex; justify-content: space-between; align-items: center; }
+  .franja .franja-marca {
+    color: var(--hueso); font-family: var(--escudo); font-weight: 700;
+    font-size: 24px; letter-spacing: .06em; margin-right: 0; padding: 4px 0;
+  }
+  .franja .franja-marca:hover { color: #C9A887; }
   .franja nav { display: flex; gap: 40px; }
   .franja a {
     text-decoration: none; color: #C9A887;
@@ -122,6 +128,7 @@
 
 <header class="franja">
   <div class="contenedor">
+    <a class="franja-marca" href="index.html" aria-label="THE IRONS, ir a la portada">The Irons</a>
     <nav aria-label="Principal">
       <a href="#" data-pendiente="página de tienda">Shop</a>
       <a href="members.html">Members</a>
