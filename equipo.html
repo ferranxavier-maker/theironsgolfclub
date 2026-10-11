@@ -30,7 +30,7 @@ input,select{font-size:11px;padding:3px 6px;border:1px solid #d1d5db;border-radi
 /* ============================================================
    ENTRENAMIENTO — scoped bajo #tab-entrenamiento
    ============================================================ */
-#tab-entrenamiento, #tab-torneos, #tab-tour, #tab-ranking {
+#tab-entrenamiento, #tab-tour, #tab-ranking {
   --ent-bg: #ffffff;
   --ent-paper: #ffffff;
   --ent-paper-2: #fafaf9;
@@ -52,7 +52,7 @@ input,select{font-size:11px;padding:3px 6px;border:1px solid #d1d5db;border-radi
   -webkit-font-smoothing: antialiased;
   padding: 32px 20px 80px;
 }
-#tab-entrenamiento .ent-wrap, #tab-torneos .ent-wrap, #tab-tour .ent-wrap, #tab-ranking .ent-wrap { max-width:630px; }
+#tab-entrenamiento .ent-wrap, #tab-tour .ent-wrap, #tab-ranking .ent-wrap { max-width:630px; }
 
 #tab-entrenamiento .temporada-block, #tab-ranking .temporada-block {
   margin-bottom: 28px;
@@ -160,7 +160,7 @@ input,select{font-size:11px;padding:3px 6px;border:1px solid #d1d5db;border-radi
   font-size: 13px;
 }
 
-#tab-entrenamiento .entreno-block, #tab-torneos .entreno-block, #tab-tour .entreno-block, #tab-ranking .entreno-block {
+#tab-entrenamiento .entreno-block, #tab-tour .entreno-block, #tab-ranking .entreno-block {
   background: var(--ent-paper);
   border: 1px solid var(--ent-border);
   border-radius: 14px;
@@ -168,11 +168,11 @@ input,select{font-size:11px;padding:3px 6px;border:1px solid #d1d5db;border-radi
   overflow: hidden;
   transition: border-color 0.2s, box-shadow 0.2s;
 }
-#tab-entrenamiento .entreno-block[open], #tab-torneos .entreno-block[open], #tab-tour .entreno-block[open], #tab-ranking .entreno-block[open] {
+#tab-entrenamiento .entreno-block[open], #tab-tour .entreno-block[open], #tab-ranking .entreno-block[open] {
   border-color: var(--ent-border-strong);
   box-shadow: 0 1px 3px rgba(0,0,0,0.04);
 }
-#tab-entrenamiento .entreno-block summary, #tab-torneos .entreno-block summary, #tab-tour .entreno-block summary, #tab-ranking .entreno-block summary {
+#tab-entrenamiento .entreno-block summary, #tab-tour .entreno-block summary, #tab-ranking .entreno-block summary {
   list-style: none;
   cursor: pointer;
   padding: 22px 28px;
@@ -183,13 +183,13 @@ input,select{font-size:11px;padding:3px 6px;border:1px solid #d1d5db;border-radi
   user-select: none;
   transition: background 0.15s;
 }
-#tab-entrenamiento .entreno-block summary::-webkit-details-marker, #tab-torneos .entreno-block summary::-webkit-details-marker, #tab-tour .entreno-block summary::-webkit-details-marker, #tab-ranking .entreno-block summary::-webkit-details-marker { display: none; }
-#tab-entrenamiento .entreno-block summary::marker, #tab-torneos .entreno-block summary::marker, #tab-tour .entreno-block summary::marker, #tab-ranking .entreno-block summary::marker { content: ''; }
-#tab-entrenamiento .entreno-block summary:hover, #tab-torneos .entreno-block summary:hover, #tab-tour .entreno-block summary:hover, #tab-ranking .entreno-block summary:hover { background: var(--ent-paper-2); }
-#tab-entrenamiento .entreno-block[open], #tab-torneos .entreno-block[open] summary, #tab-tour .entreno-block[open] summary, #tab-ranking .entreno-block[open] summary {
+#tab-entrenamiento .entreno-block summary::-webkit-details-marker, #tab-tour .entreno-block summary::-webkit-details-marker, #tab-ranking .entreno-block summary::-webkit-details-marker { display: none; }
+#tab-entrenamiento .entreno-block summary::marker, #tab-tour .entreno-block summary::marker, #tab-ranking .entreno-block summary::marker { content: ''; }
+#tab-entrenamiento .entreno-block summary:hover, #tab-tour .entreno-block summary:hover, #tab-ranking .entreno-block summary:hover { background: var(--ent-paper-2); }
+#tab-entrenamiento .entreno-block[open], #tab-tour .entreno-block[open] summary, #tab-ranking .entreno-block[open] summary {
   border-bottom: 1px solid var(--ent-border);
 }
-#tab-entrenamiento .entreno-meta .eyebrow, #tab-torneos .entreno-meta .eyebrow, #tab-tour .entreno-meta .eyebrow, #tab-ranking .entreno-meta .eyebrow {
+#tab-entrenamiento .entreno-meta .eyebrow, #tab-tour .entreno-meta .eyebrow, #tab-ranking .entreno-meta .eyebrow {
   font-size: 11px;
   letter-spacing: 4px;
   text-transform: uppercase;
@@ -197,7 +197,7 @@ input,select{font-size:11px;padding:3px 6px;border:1px solid #d1d5db;border-radi
   font-weight: 700;
   margin-bottom: 8px;
 }
-#tab-entrenamiento .entreno-meta .titulo, #tab-torneos .entreno-meta .titulo, #tab-tour .entreno-meta .titulo, #tab-ranking .entreno-meta .titulo {
+#tab-entrenamiento .entreno-meta .titulo, #tab-tour .entreno-meta .titulo, #tab-ranking .entreno-meta .titulo {
   font-family: 'Fraunces', serif;
   font-weight: 900;
   font-size: clamp(28px, 4vw, 44px);
@@ -205,12 +205,12 @@ input,select{font-size:11px;padding:3px 6px;border:1px solid #d1d5db;border-radi
   letter-spacing: -1.5px;
   color: var(--ent-ink);
 }
-#tab-entrenamiento .entreno-meta .titulo em, #tab-torneos .entreno-meta .titulo em, #tab-tour .entreno-meta .titulo em, #tab-ranking .entreno-meta .titulo em {
+#tab-entrenamiento .entreno-meta .titulo em, #tab-tour .entreno-meta .titulo em, #tab-ranking .entreno-meta .titulo em {
   font-style: italic;
   font-weight: 400;
   color: var(--ent-accent);
 }
-#tab-entrenamiento .entreno-score-equipo, #tab-torneos .entreno-score-equipo, #tab-tour .entreno-score-equipo, #tab-ranking .entreno-score-equipo {
+#tab-entrenamiento .entreno-score-equipo, #tab-tour .entreno-score-equipo, #tab-ranking .entreno-score-equipo {
   display: inline-flex;
   align-items: stretch;
   margin-left: 14px;
@@ -219,10 +219,10 @@ input,select{font-size:11px;padding:3px 6px;border:1px solid #d1d5db;border-radi
   vertical-align: middle;
   font-style: normal;
 }
-#tab-entrenamiento .entreno-score-equipo:empty, #tab-torneos .entreno-score-equipo:empty, #tab-tour .entreno-score-equipo:empty, #tab-ranking .entreno-score-equipo:empty {
+#tab-entrenamiento .entreno-score-equipo:empty, #tab-tour .entreno-score-equipo:empty, #tab-ranking .entreno-score-equipo:empty {
   display: none;
 }
-#tab-entrenamiento .entreno-score-equipo .ese-box, #tab-torneos .entreno-score-equipo .ese-box, #tab-tour .entreno-score-equipo .ese-box, #tab-ranking .entreno-score-equipo .ese-box {
+#tab-entrenamiento .entreno-score-equipo .ese-box, #tab-tour .entreno-score-equipo .ese-box, #tab-ranking .entreno-score-equipo .ese-box {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -233,7 +233,7 @@ input,select{font-size:11px;padding:3px 6px;border:1px solid #d1d5db;border-radi
   min-width: 48px;
   cursor: help;
 }
-#tab-entrenamiento .entreno-score-equipo .ese-label, #tab-torneos .entreno-score-equipo .ese-label, #tab-tour .entreno-score-equipo .ese-label, #tab-ranking .entreno-score-equipo .ese-label {
+#tab-entrenamiento .entreno-score-equipo .ese-label, #tab-tour .entreno-score-equipo .ese-label, #tab-ranking .entreno-score-equipo .ese-label {
   font-size: 9px;
   font-weight: 600;
   text-transform: uppercase;
@@ -241,42 +241,42 @@ input,select{font-size:11px;padding:3px 6px;border:1px solid #d1d5db;border-radi
   opacity: 0.7;
   line-height: 1;
 }
-#tab-entrenamiento .entreno-score-equipo .ese-val, #tab-torneos .entreno-score-equipo .ese-val, #tab-tour .entreno-score-equipo .ese-val, #tab-ranking .entreno-score-equipo .ese-val {
+#tab-entrenamiento .entreno-score-equipo .ese-val, #tab-tour .entreno-score-equipo .ese-val, #tab-ranking .entreno-score-equipo .ese-val {
   font-size: 14px;
   font-weight: 700;
   letter-spacing: -0.3px;
   line-height: 1.2;
   margin-top: 2px;
 }
-#tab-entrenamiento .entreno-score-equipo .ese-peor, #tab-torneos .entreno-score-equipo .ese-peor, #tab-tour .entreno-score-equipo .ese-peor, #tab-ranking .entreno-score-equipo .ese-peor {
+#tab-entrenamiento .entreno-score-equipo .ese-peor, #tab-tour .entreno-score-equipo .ese-peor, #tab-ranking .entreno-score-equipo .ese-peor {
   background: #fee2e2;
   border-color: #fca5a5;
   color: #991b1b;
 }
-#tab-entrenamiento .entreno-score-equipo .ese-avg, #tab-torneos .entreno-score-equipo .ese-avg, #tab-tour .entreno-score-equipo .ese-avg, #tab-ranking .entreno-score-equipo .ese-avg {
+#tab-entrenamiento .entreno-score-equipo .ese-avg, #tab-tour .entreno-score-equipo .ese-avg, #tab-ranking .entreno-score-equipo .ese-avg {
   background: #fef3c7;
   border-color: #fcd34d;
   color: #92400e;
   min-width: 60px;
 }
-#tab-entrenamiento .entreno-score-equipo .ese-avg .ese-val, #tab-torneos .entreno-score-equipo .ese-avg .ese-val, #tab-tour .entreno-score-equipo .ese-avg .ese-val, #tab-ranking .entreno-score-equipo .ese-avg .ese-val {
+#tab-entrenamiento .entreno-score-equipo .ese-avg .ese-val, #tab-tour .entreno-score-equipo .ese-avg .ese-val, #tab-ranking .entreno-score-equipo .ese-avg .ese-val {
   font-size: 16px;
 }
-#tab-entrenamiento .entreno-score-equipo .ese-mejor, #tab-torneos .entreno-score-equipo .ese-mejor, #tab-tour .entreno-score-equipo .ese-mejor, #tab-ranking .entreno-score-equipo .ese-mejor {
+#tab-entrenamiento .entreno-score-equipo .ese-mejor, #tab-tour .entreno-score-equipo .ese-mejor, #tab-ranking .entreno-score-equipo .ese-mejor {
   background: #dcfce7;
   border-color: #86efac;
   color: #15803d;
 }
-#tab-entrenamiento .entreno-score-equipo .ese-pronostico, #tab-torneos .entreno-score-equipo .ese-pronostico, #tab-tour .entreno-score-equipo .ese-pronostico, #tab-ranking .entreno-score-equipo .ese-pronostico {
+#tab-entrenamiento .entreno-score-equipo .ese-pronostico, #tab-tour .entreno-score-equipo .ese-pronostico, #tab-ranking .entreno-score-equipo .ese-pronostico {
   background: linear-gradient(135deg, #ede9fe 0%, #fef3c7 100%);
   border-color: #c4b5fd;
   color: #5b21b6;
   min-width: 78px;
 }
-#tab-entrenamiento .entreno-score-equipo .ese-pronostico .ese-val, #tab-torneos .entreno-score-equipo .ese-pronostico .ese-val, #tab-tour .entreno-score-equipo .ese-pronostico .ese-val, #tab-ranking .entreno-score-equipo .ese-pronostico .ese-val {
+#tab-entrenamiento .entreno-score-equipo .ese-pronostico .ese-val, #tab-tour .entreno-score-equipo .ese-pronostico .ese-val, #tab-ranking .entreno-score-equipo .ese-pronostico .ese-val {
   font-size: 17px;
 }
-#tab-entrenamiento .entreno-fecha, #tab-torneos .entreno-fecha, #tab-tour .entreno-fecha, #tab-ranking .entreno-fecha {
+#tab-entrenamiento .entreno-fecha, #tab-tour .entreno-fecha, #tab-ranking .entreno-fecha {
   font-family: 'JetBrains Mono', monospace;
   font-size: 11px;
   color: var(--ent-ink-muted);
@@ -285,7 +285,7 @@ input,select{font-size:11px;padding:3px 6px;border:1px solid #d1d5db;border-radi
   white-space: nowrap;
   font-weight: 500;
 }
-#tab-entrenamiento .entreno-chevron, #tab-torneos .entreno-chevron, #tab-tour .entreno-chevron, #tab-ranking .entreno-chevron {
+#tab-entrenamiento .entreno-chevron, #tab-tour .entreno-chevron, #tab-ranking .entreno-chevron {
   width: 32px;
   height: 32px;
   display: flex;
@@ -297,16 +297,16 @@ input,select{font-size:11px;padding:3px 6px;border:1px solid #d1d5db;border-radi
   border-radius: 50%;
   background: var(--ent-paper-2);
 }
-#tab-entrenamiento .entreno-block[open] .entreno-chevron, #tab-torneos .entreno-block[open] .entreno-chevron, #tab-tour .entreno-block[open] .entreno-chevron, #tab-ranking .entreno-block[open] .entreno-chevron {
+#tab-entrenamiento .entreno-block[open] .entreno-chevron, #tab-tour .entreno-block[open] .entreno-chevron, #tab-ranking .entreno-block[open] .entreno-chevron {
   transform: rotate(180deg);
   background: transparent;
   color: var(--ent-accent);
 }
-#tab-entrenamiento .entreno-body, #tab-torneos .entreno-body, #tab-tour .entreno-body, #tab-ranking .entreno-body {
+#tab-entrenamiento .entreno-body, #tab-tour .entreno-body, #tab-ranking .entreno-body {
   padding: 24px 12px 32px;
 }
 
-#tab-entrenamiento .ent-section-title, #tab-torneos .ent-section-title, #tab-tour .ent-section-title, #tab-ranking .ent-section-title {
+#tab-entrenamiento .ent-section-title, #tab-tour .ent-section-title, #tab-ranking .ent-section-title {
   font-family: 'Fraunces', serif;
   font-style: italic;
   font-size: 22px;
@@ -318,39 +318,39 @@ input,select{font-size:11px;padding:3px 6px;border:1px solid #d1d5db;border-radi
   align-items: center;
   gap: 14px;
 }
-#tab-entrenamiento .ent-section-title::before, #tab-torneos .ent-section-title::before, #tab-tour .ent-section-title::before, #tab-ranking .ent-section-title::before {
+#tab-entrenamiento .ent-section-title::before, #tab-tour .ent-section-title::before, #tab-ranking .ent-section-title::before {
   content: '';
   width: 24px;
   height: 2px;
   background: var(--ent-accent);
 }
 
-#tab-entrenamiento .players-grid, #tab-torneos .players-grid, #tab-tour .players-grid, #tab-ranking .players-grid {
+#tab-entrenamiento .players-grid, #tab-tour .players-grid, #tab-ranking .players-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 6px;
   margin-bottom: 16px;
 }
-#tab-entrenamiento .players-grid.grid-2, #tab-torneos .players-grid.grid-2, #tab-tour .players-grid.grid-2, #tab-ranking .players-grid.grid-2 {
+#tab-entrenamiento .players-grid.grid-2, #tab-tour .players-grid.grid-2, #tab-ranking .players-grid.grid-2 {
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
   max-width: 460px;
 }
-#tab-entrenamiento .players-grid.grid-2 .pcard, #tab-torneos .players-grid.grid-2 .pcard, #tab-tour .players-grid.grid-2 .pcard, #tab-ranking .players-grid.grid-2 .pcard {
+#tab-entrenamiento .players-grid.grid-2 .pcard, #tab-tour .players-grid.grid-2 .pcard, #tab-ranking .players-grid.grid-2 .pcard {
   min-height: 70px;
   padding: 8px 6px 10px;
   gap: 4px;
 }
-#tab-entrenamiento .players-grid.grid-2 .pcard .delta, #tab-torneos .players-grid.grid-2 .pcard .delta, #tab-tour .players-grid.grid-2 .pcard .delta, #tab-ranking .players-grid.grid-2 .pcard .delta {
+#tab-entrenamiento .players-grid.grid-2 .pcard .delta, #tab-tour .players-grid.grid-2 .pcard .delta, #tab-ranking .players-grid.grid-2 .pcard .delta {
   font-size: 22px;
 }
-#tab-entrenamiento .players-grid.grid-2 .pcard .name, #tab-torneos .players-grid.grid-2 .pcard .name, #tab-tour .players-grid.grid-2 .pcard .name, #tab-ranking .players-grid.grid-2 .pcard .name {
+#tab-entrenamiento .players-grid.grid-2 .pcard .name, #tab-tour .players-grid.grid-2 .pcard .name, #tab-ranking .players-grid.grid-2 .pcard .name {
   font-size: 10px;
 }
-#tab-entrenamiento .players-grid.grid-2 .pcard .ent-mini, #tab-torneos .players-grid.grid-2 .pcard .ent-mini, #tab-tour .players-grid.grid-2 .pcard .ent-mini, #tab-ranking .players-grid.grid-2 .pcard .ent-mini {
+#tab-entrenamiento .players-grid.grid-2 .pcard .ent-mini, #tab-tour .players-grid.grid-2 .pcard .ent-mini, #tab-ranking .players-grid.grid-2 .pcard .ent-mini {
   font-size: 11px;
 }
-#tab-entrenamiento .pcard .delta .delta-reg, #tab-torneos .pcard .delta .delta-reg, #tab-tour .pcard .delta .delta-reg, #tab-ranking .pcard .delta .delta-reg {
+#tab-entrenamiento .pcard .delta .delta-reg, #tab-tour .pcard .delta .delta-reg, #tab-ranking .pcard .delta .delta-reg {
   font-size: 11px;
   color: var(--ent-muted, #8a7a5c);
   font-weight: 500;
@@ -358,10 +358,10 @@ input,select{font-size:11px;padding:3px 6px;border:1px solid #d1d5db;border-radi
   margin-left: 4px;
   letter-spacing: 0;
 }
-#tab-entrenamiento .players-grid.grid-2 .pcard .delta .delta-reg, #tab-torneos .players-grid.grid-2 .pcard .delta .delta-reg, #tab-tour .players-grid.grid-2 .pcard .delta .delta-reg, #tab-ranking .players-grid.grid-2 .pcard .delta .delta-reg {
+#tab-entrenamiento .players-grid.grid-2 .pcard .delta .delta-reg, #tab-tour .players-grid.grid-2 .pcard .delta .delta-reg, #tab-ranking .players-grid.grid-2 .pcard .delta .delta-reg {
   font-size: 11px;
 }
-#tab-entrenamiento .pcard, #tab-torneos .pcard, #tab-tour .pcard, #tab-ranking .pcard {
+#tab-entrenamiento .pcard, #tab-tour .pcard, #tab-ranking .pcard {
   background: var(--ent-paper);
   border: 2px solid var(--ent-border-strong);
   border-radius: 10px;
@@ -376,24 +376,24 @@ input,select{font-size:11px;padding:3px 6px;border:1px solid #d1d5db;border-radi
   transition: border-color 0.2s, transform 0.2s;
   position: relative;
 }
-#tab-entrenamiento .pcard:hover, #tab-torneos .pcard:hover, #tab-tour .pcard:hover, #tab-ranking .pcard:hover {
+#tab-entrenamiento .pcard:hover, #tab-tour .pcard:hover, #tab-ranking .pcard:hover {
   border-color: var(--ent-accent);
   transform: translateY(-1px);
 }
-#tab-entrenamiento .pcard.pcard-active, #tab-torneos .pcard.pcard-active, #tab-tour .pcard.pcard-active, #tab-ranking .pcard.pcard-active {
+#tab-entrenamiento .pcard.pcard-active, #tab-tour .pcard.pcard-active, #tab-ranking .pcard.pcard-active {
   border-color: var(--ent-accent);
   border-width: 2px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
   z-index: 100;
   opacity: 1 !important;
 }
-#tab-entrenamiento .pcard-popover, #tab-torneos .pcard-popover, #tab-tour .pcard-popover, #tab-ranking .pcard-popover {
+#tab-entrenamiento .pcard-popover, #tab-tour .pcard-popover, #tab-ranking .pcard-popover {
   opacity: 1;
 }
-#tab-entrenamiento .pcard, #tab-torneos .pcard, #tab-tour .pcard, #tab-ranking .pcard {
+#tab-entrenamiento .pcard, #tab-tour .pcard, #tab-ranking .pcard {
   cursor: pointer;
 }
-#tab-entrenamiento .pcard-popover, #tab-torneos .pcard-popover, #tab-tour .pcard-popover, #tab-ranking .pcard-popover {
+#tab-entrenamiento .pcard-popover, #tab-tour .pcard-popover, #tab-ranking .pcard-popover {
   position: absolute;
   top: calc(100% + 8px);
   left: 50%;
@@ -412,7 +412,7 @@ input,select{font-size:11px;padding:3px 6px;border:1px solid #d1d5db;border-radi
   white-space: nowrap;
   pointer-events: auto;
 }
-#tab-entrenamiento .pcard-popover::before, #tab-torneos .pcard-popover::before, #tab-tour .pcard-popover::before, #tab-ranking .pcard-popover::before {
+#tab-entrenamiento .pcard-popover::before, #tab-tour .pcard-popover::before, #tab-ranking .pcard-popover::before {
   content: '';
   position: absolute;
   top: -6px;
@@ -424,7 +424,7 @@ input,select{font-size:11px;padding:3px 6px;border:1px solid #d1d5db;border-radi
   border-left: 1px solid #d6cfa3;
   border-top: 1px solid #d6cfa3;
 }
-#tab-entrenamiento .pcard-popover .pop-title, #tab-torneos .pcard-popover .pop-title, #tab-tour .pcard-popover .pop-title, #tab-ranking .pcard-popover .pop-title {
+#tab-entrenamiento .pcard-popover .pop-title, #tab-tour .pcard-popover .pop-title, #tab-ranking .pcard-popover .pop-title {
   font-weight: 600;
   font-size: 12px;
   margin-bottom: 4px;
@@ -432,20 +432,20 @@ input,select{font-size:11px;padding:3px 6px;border:1px solid #d1d5db;border-radi
   border-bottom: 1px solid #ece6c8;
   color: #6b5e1f;
 }
-#tab-entrenamiento .pcard-popover .pop-row, #tab-torneos .pcard-popover .pop-row, #tab-tour .pcard-popover .pop-row, #tab-ranking .pcard-popover .pop-row {
+#tab-entrenamiento .pcard-popover .pop-row, #tab-tour .pcard-popover .pop-row, #tab-ranking .pcard-popover .pop-row {
   display: flex;
   justify-content: space-between;
   gap: 14px;
   padding: 1px 0;
 }
-#tab-entrenamiento .pcard-popover .pop-row .pop-label, #tab-torneos .pcard-popover .pop-row .pop-label, #tab-tour .pcard-popover .pop-row .pop-label, #tab-ranking .pcard-popover .pop-row .pop-label {
+#tab-entrenamiento .pcard-popover .pop-row .pop-label, #tab-tour .pcard-popover .pop-row .pop-label, #tab-ranking .pcard-popover .pop-row .pop-label {
   color: #555;
 }
-#tab-entrenamiento .pcard-popover .pop-row .pop-value, #tab-torneos .pcard-popover .pop-row .pop-value, #tab-tour .pcard-popover .pop-row .pop-value, #tab-ranking .pcard-popover .pop-row .pop-value {
+#tab-entrenamiento .pcard-popover .pop-row .pop-value, #tab-tour .pcard-popover .pop-row .pop-value, #tab-ranking .pcard-popover .pop-row .pop-value {
   font-weight: 500;
   color: #1a1a1a;
 }
-#tab-entrenamiento .pcard-popover .pop-close, #tab-torneos .pcard-popover .pop-close, #tab-tour .pcard-popover .pop-close, #tab-ranking .pcard-popover .pop-close {
+#tab-entrenamiento .pcard-popover .pop-close, #tab-tour .pcard-popover .pop-close, #tab-ranking .pcard-popover .pop-close {
   position: absolute;
   top: 4px;
   right: 6px;
@@ -456,33 +456,33 @@ input,select{font-size:11px;padding:3px 6px;border:1px solid #d1d5db;border-radi
   padding: 2px 4px;
   border-radius: 3px;
 }
-#tab-entrenamiento .pcard-popover .pop-close:hover, #tab-torneos .pcard-popover .pop-close:hover, #tab-tour .pcard-popover .pop-close:hover, #tab-ranking .pcard-popover .pop-close:hover {
+#tab-entrenamiento .pcard-popover .pop-close:hover, #tab-tour .pcard-popover .pop-close:hover, #tab-ranking .pcard-popover .pop-close:hover {
   background: rgba(0,0,0,0.06);
   color: #333;
 }
-#tab-entrenamiento .pcard.empty, #tab-torneos .pcard.empty, #tab-tour .pcard.empty, #tab-ranking .pcard.empty { opacity: 0.5; background: var(--ent-paper-2); }
-#tab-entrenamiento .pcard-attenuated, #tab-torneos .pcard-attenuated, #tab-tour .pcard-attenuated, #tab-ranking .pcard-attenuated {
+#tab-entrenamiento .pcard.empty, #tab-tour .pcard.empty, #tab-ranking .pcard.empty { opacity: 0.5; background: var(--ent-paper-2); }
+#tab-entrenamiento .pcard-attenuated, #tab-tour .pcard-attenuated, #tab-ranking .pcard-attenuated {
   opacity: 0.62;
   border-style: dashed;
 }
-#tab-entrenamiento .pcard-sindatos, #tab-torneos .pcard-sindatos, #tab-tour .pcard-sindatos, #tab-ranking .pcard-sindatos {
+#tab-entrenamiento .pcard-sindatos, #tab-tour .pcard-sindatos, #tab-ranking .pcard-sindatos {
   background: #fafaf5;
 }
-#tab-entrenamiento .pcard-sindatos .delta-sindatos, #tab-torneos .pcard-sindatos .delta-sindatos, #tab-tour .pcard-sindatos .delta-sindatos, #tab-ranking .pcard-sindatos .delta-sindatos {
+#tab-entrenamiento .pcard-sindatos .delta-sindatos, #tab-tour .pcard-sindatos .delta-sindatos, #tab-ranking .pcard-sindatos .delta-sindatos {
   color: #6b7280;
   font-style: italic;
 }
-#tab-entrenamiento .pcard, #tab-torneos .pcard, #tab-tour .pcard, #tab-ranking .pcard {
+#tab-entrenamiento .pcard, #tab-tour .pcard, #tab-ranking .pcard {
   position: relative;
 }
-#tab-entrenamiento .ent-badge, #tab-torneos .ent-badge, #tab-tour .ent-badge, #tab-ranking .ent-badge {
+#tab-entrenamiento .ent-badge, #tab-tour .ent-badge, #tab-ranking .ent-badge {
   position: absolute;
   top: 4px;
   right: 5px;
   font-size: 14px;
   line-height: 1;
 }
-#tab-entrenamiento .ent-mini, #tab-torneos .ent-mini, #tab-tour .ent-mini, #tab-ranking .ent-mini {
+#tab-entrenamiento .ent-mini, #tab-tour .ent-mini, #tab-ranking .ent-mini {
   margin-top: 4px;
   font-size: 9px;
   color: var(--ent-ink-muted);
@@ -490,7 +490,7 @@ input,select{font-size:11px;padding:3px 6px;border:1px solid #d1d5db;border-radi
   white-space: nowrap;
   font-weight: 500;
 }
-#tab-entrenamiento .pcard .name, #tab-torneos .pcard .name, #tab-tour .pcard .name, #tab-ranking .pcard .name {
+#tab-entrenamiento .pcard .name, #tab-tour .pcard .name, #tab-ranking .pcard .name {
   font-family: 'DM Sans', sans-serif;
   font-size: 10px;
   font-weight: 700;
@@ -499,7 +499,7 @@ input,select{font-size:11px;padding:3px 6px;border:1px solid #d1d5db;border-radi
   color: var(--ent-ink);
   line-height: 1;
 }
-#tab-entrenamiento .pcard .delta, #tab-torneos .pcard .delta, #tab-tour .pcard .delta, #tab-ranking .pcard .delta {
+#tab-entrenamiento .pcard .delta, #tab-tour .pcard .delta, #tab-ranking .pcard .delta {
   font-family: 'Fraunces', serif;
   font-size: 28px;
   font-weight: 700;
@@ -507,20 +507,20 @@ input,select{font-size:11px;padding:3px 6px;border:1px solid #d1d5db;border-radi
   font-variant-numeric: tabular-nums;
   letter-spacing: -0.5px;
 }
-#tab-entrenamiento .pcard.empty .delta, #tab-torneos .pcard.empty .delta, #tab-tour .pcard.empty .delta, #tab-ranking .pcard.empty .delta { color: var(--ent-ink-dim); font-size: 18px; }
-#tab-entrenamiento .delta-neg, #tab-torneos .delta-neg, #tab-tour .delta-neg, #tab-ranking .delta-neg { color: var(--ent-birdie); }
-#tab-entrenamiento .delta-pos, #tab-torneos .delta-pos, #tab-tour .delta-pos, #tab-ranking .delta-pos { color: var(--ent-bogey);  }
-#tab-entrenamiento .delta-zero, #tab-torneos .delta-zero, #tab-tour .delta-zero, #tab-ranking .delta-zero { color: var(--ent-ink); }
-#tab-entrenamiento .delta-empty, #tab-torneos .delta-empty, #tab-tour .delta-empty, #tab-ranking .delta-empty { color: var(--ent-ink-dim); }
+#tab-entrenamiento .pcard.empty .delta, #tab-tour .pcard.empty .delta, #tab-ranking .pcard.empty .delta { color: var(--ent-ink-dim); font-size: 18px; }
+#tab-entrenamiento .delta-neg, #tab-tour .delta-neg, #tab-ranking .delta-neg { color: var(--ent-birdie); }
+#tab-entrenamiento .delta-pos, #tab-tour .delta-pos, #tab-ranking .delta-pos { color: var(--ent-bogey);  }
+#tab-entrenamiento .delta-zero, #tab-tour .delta-zero, #tab-ranking .delta-zero { color: var(--ent-ink); }
+#tab-entrenamiento .delta-empty, #tab-tour .delta-empty, #tab-ranking .delta-empty { color: var(--ent-ink-dim); }
 
-#tab-entrenamiento .jornada, #tab-torneos .jornada, #tab-tour .jornada, #tab-ranking .jornada {
+#tab-entrenamiento .jornada, #tab-tour .jornada, #tab-ranking .jornada {
   background: var(--ent-paper);
   border: 1px solid var(--ent-border);
   border-radius: 12px;
   margin-bottom: 24px;
   overflow: hidden;
 }
-#tab-entrenamiento .jornada-header, #tab-torneos .jornada-header, #tab-tour .jornada-header, #tab-ranking .jornada-header {
+#tab-entrenamiento .jornada-header, #tab-tour .jornada-header, #tab-ranking .jornada-header {
   padding: 16px 22px;
   display: flex;
   justify-content: space-between;
@@ -528,17 +528,17 @@ input,select{font-size:11px;padding:3px 6px;border:1px solid #d1d5db;border-radi
   border-bottom: 1px solid var(--ent-border);
   background: var(--ent-paper-2);
 }
-#tab-entrenamiento .jornada-title, #tab-torneos .jornada-title, #tab-tour .jornada-title, #tab-ranking .jornada-title {
+#tab-entrenamiento .jornada-title, #tab-tour .jornada-title, #tab-ranking .jornada-title {
   font-family: 'Fraunces', serif;
   font-size: 22px;
   font-weight: 700;
   letter-spacing: -0.5px;
 }
-#tab-entrenamiento .jornada-title em, #tab-torneos .jornada-title em, #tab-tour .jornada-title em, #tab-ranking .jornada-title em {
+#tab-entrenamiento .jornada-title em, #tab-tour .jornada-title em, #tab-ranking .jornada-title em {
   color: var(--ent-accent);
   font-style: italic;
 }
-#tab-entrenamiento .jornada-fecha, #tab-torneos .jornada-fecha, #tab-tour .jornada-fecha, #tab-ranking .jornada-fecha {
+#tab-entrenamiento .jornada-fecha, #tab-tour .jornada-fecha, #tab-ranking .jornada-fecha {
   font-family: 'JetBrains Mono', monospace;
   font-size: 11px;
   color: var(--ent-ink-muted);
@@ -546,16 +546,16 @@ input,select{font-size:11px;padding:3px 6px;border:1px solid #d1d5db;border-radi
   text-transform: uppercase;
 }
 
-#tab-entrenamiento .table-wrap, #tab-torneos .table-wrap, #tab-tour .table-wrap, #tab-ranking .table-wrap { overflow-x: visible; }
+#tab-entrenamiento .table-wrap, #tab-tour .table-wrap, #tab-ranking .table-wrap { overflow-x: visible; }
 
-#tab-entrenamiento table.scorecard, #tab-torneos table.scorecard, #tab-tour table.scorecard, #tab-ranking table.scorecard {
+#tab-entrenamiento table.scorecard, #tab-tour table.scorecard, #tab-ranking table.scorecard {
   width: 100%;
   border-collapse: separate;
   border-spacing: 0;
   font-family: 'JetBrains Mono', monospace;
   font-size: 13px;
 }
-#tab-entrenamiento table.scorecard thead th, #tab-torneos table.scorecard thead th, #tab-tour table.scorecard thead th, #tab-ranking table.scorecard thead th {
+#tab-entrenamiento table.scorecard thead th, #tab-tour table.scorecard thead th, #tab-ranking table.scorecard thead th {
   color: var(--ent-ink-muted);
   font-weight: 600;
   font-size: 11px;
@@ -566,7 +566,7 @@ input,select{font-size:11px;padding:3px 6px;border:1px solid #d1d5db;border-radi
   text-align: center;
   min-width: 24px;
 }
-#tab-entrenamiento table.scorecard thead th.col-jug, #tab-torneos table.scorecard thead th.col-jug, #tab-tour table.scorecard thead th.col-jug, #tab-ranking table.scorecard thead th.col-jug {
+#tab-entrenamiento table.scorecard thead th.col-jug, #tab-tour table.scorecard thead th.col-jug, #tab-ranking table.scorecard thead th.col-jug {
   text-align: left;
   padding-left: 14px;
   padding-right: 8px;
@@ -575,7 +575,7 @@ input,select{font-size:11px;padding:3px 6px;border:1px solid #d1d5db;border-radi
   letter-spacing: 1px;
   min-width: 70px;
 }
-#tab-entrenamiento table.scorecard thead th.col-tot, #tab-torneos table.scorecard thead th.col-tot, #tab-tour table.scorecard thead th.col-tot, #tab-ranking table.scorecard thead th.col-tot {
+#tab-entrenamiento table.scorecard thead th.col-tot, #tab-tour table.scorecard thead th.col-tot, #tab-ranking table.scorecard thead th.col-tot {
   background: var(--ent-tot);
   color: white;
   font-weight: 700;
@@ -583,11 +583,11 @@ input,select{font-size:11px;padding:3px 6px;border:1px solid #d1d5db;border-radi
   letter-spacing: 0.5px;
   min-width: 38px;
 }
-#tab-entrenamiento table.scorecard thead th.col-stat, #tab-torneos table.scorecard thead th.col-stat, #tab-tour table.scorecard thead th.col-stat, #tab-ranking table.scorecard thead th.col-stat {
+#tab-entrenamiento table.scorecard thead th.col-stat, #tab-tour table.scorecard thead th.col-stat, #tab-ranking table.scorecard thead th.col-stat {
   min-width: 26px;
   font-size: 12px;
 }
-#tab-entrenamiento table.scorecard tbody td, #tab-torneos table.scorecard tbody td, #tab-tour table.scorecard tbody td, #tab-ranking table.scorecard tbody td {
+#tab-entrenamiento table.scorecard tbody td, #tab-tour table.scorecard tbody td, #tab-ranking table.scorecard tbody td {
   padding: 6px 2px;
   text-align: center;
   border: none;
@@ -597,9 +597,9 @@ input,select{font-size:11px;padding:3px 6px;border:1px solid #d1d5db;border-radi
   height: 38px;
   white-space: normal;
 }
-#tab-entrenamiento table.scorecard tbody tr:last-child td, #tab-torneos table.scorecard tbody tr:last-child td, #tab-tour table.scorecard tbody tr:last-child td, #tab-ranking table.scorecard tbody tr:last-child td { border-bottom: none; }
+#tab-entrenamiento table.scorecard tbody tr:last-child td, #tab-tour table.scorecard tbody tr:last-child td, #tab-ranking table.scorecard tbody tr:last-child td { border-bottom: none; }
 
-#tab-entrenamiento td.col-jug, #tab-torneos td.col-jug, #tab-tour td.col-jug, #tab-ranking td.col-jug {
+#tab-entrenamiento td.col-jug, #tab-tour td.col-jug, #tab-ranking td.col-jug {
   text-align: left !important;
   padding-left: 22px !important;
   font-family: 'DM Sans', sans-serif;
@@ -613,7 +613,7 @@ input,select{font-size:11px;padding:3px 6px;border:1px solid #d1d5db;border-radi
   left: 0;
   z-index: 1;
 }
-#tab-entrenamiento .chip, #tab-torneos .chip, #tab-tour .chip, #tab-ranking .chip {
+#tab-entrenamiento .chip, #tab-tour .chip, #tab-ranking .chip {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -625,66 +625,66 @@ input,select{font-size:11px;padding:3px 6px;border:1px solid #d1d5db;border-radi
   font-size: 13px;
   line-height: 1;
 }
-#tab-entrenamiento .chip-birdie, #tab-torneos .chip-birdie, #tab-tour .chip-birdie, #tab-ranking .chip-birdie {
+#tab-entrenamiento .chip-birdie, #tab-tour .chip-birdie, #tab-ranking .chip-birdie {
   background: var(--ent-birdie);
   color: white;
   border-radius: 50%;
   width: 26px;
   padding: 0;
 }
-#tab-entrenamiento .chip-hio, #tab-torneos .chip-hio, #tab-tour .chip-hio, #tab-ranking .chip-hio {
+#tab-entrenamiento .chip-hio, #tab-tour .chip-hio, #tab-ranking .chip-hio {
   background: var(--ent-hio);
   color: white;
   border-radius: 50%;
   width: 26px;
   padding: 0;
 }
-#tab-entrenamiento .chip-bogey, #tab-torneos .chip-bogey, #tab-tour .chip-bogey, #tab-ranking .chip-bogey {
+#tab-entrenamiento .chip-bogey, #tab-tour .chip-bogey, #tab-ranking .chip-bogey {
   background: var(--ent-bogey);
   color: white;
 }
-#tab-entrenamiento .chip-doble, #tab-torneos .chip-doble, #tab-tour .chip-doble, #tab-ranking .chip-doble {
+#tab-entrenamiento .chip-doble, #tab-tour .chip-doble, #tab-ranking .chip-doble {
   background: var(--ent-doble);
   color: white;
 }
-#tab-entrenamiento .par-num, #tab-torneos .par-num, #tab-tour .par-num, #tab-ranking .par-num {
+#tab-entrenamiento .par-num, #tab-tour .par-num, #tab-ranking .par-num {
   color: var(--ent-ink);
   font-weight: 500;
 }
-#tab-entrenamiento td.col-tot, #tab-torneos td.col-tot, #tab-tour td.col-tot, #tab-ranking td.col-tot {
+#tab-entrenamiento td.col-tot, #tab-tour td.col-tot, #tab-ranking td.col-tot {
   background: var(--ent-tot) !important;
   color: #ffffff !important;
   font-weight: 800 !important;
   font-size: 15px;
   border-left: 0;
 }
-#tab-entrenamiento td.col-stat, #tab-torneos td.col-stat, #tab-tour td.col-stat, #tab-ranking td.col-stat {
+#tab-entrenamiento td.col-stat, #tab-tour td.col-stat, #tab-ranking td.col-stat {
   background: var(--ent-paper-2);
   font-weight: 600;
   color: var(--ent-ink-soft);
 }
-#tab-entrenamiento td.col-stat.zero, #tab-torneos td.col-stat.zero, #tab-tour td.col-stat.zero, #tab-ranking td.col-stat.zero { color: var(--ent-ink-dim); }
-#tab-entrenamiento td.col-stat.bir, #tab-torneos td.col-stat.bir, #tab-tour td.col-stat.bir, #tab-ranking td.col-stat.bir { color: var(--ent-birdie); }
-#tab-entrenamiento td.col-stat.par, #tab-torneos td.col-stat.par, #tab-tour td.col-stat.par, #tab-ranking td.col-stat.par { color: var(--ent-ink); }
-#tab-entrenamiento td.col-stat.bog, #tab-torneos td.col-stat.bog, #tab-tour td.col-stat.bog, #tab-ranking td.col-stat.bog { color: var(--ent-bogey); }
-#tab-entrenamiento td.col-stat.dbl, #tab-torneos td.col-stat.dbl, #tab-tour td.col-stat.dbl, #tab-ranking td.col-stat.dbl { color: var(--ent-doble); }
-#tab-entrenamiento th.col-stat-bir, #tab-torneos th.col-stat-bir, #tab-tour th.col-stat-bir, #tab-ranking th.col-stat-bir { color: var(--ent-birdie) !important; }
-#tab-entrenamiento th.col-stat-bog, #tab-torneos th.col-stat-bog, #tab-tour th.col-stat-bog, #tab-ranking th.col-stat-bog { color: var(--ent-bogey) !important; }
-#tab-entrenamiento th.col-stat-dbl, #tab-torneos th.col-stat-dbl, #tab-tour th.col-stat-dbl, #tab-ranking th.col-stat-dbl { color: var(--ent-doble) !important; }
+#tab-entrenamiento td.col-stat.zero, #tab-tour td.col-stat.zero, #tab-ranking td.col-stat.zero { color: var(--ent-ink-dim); }
+#tab-entrenamiento td.col-stat.bir, #tab-tour td.col-stat.bir, #tab-ranking td.col-stat.bir { color: var(--ent-birdie); }
+#tab-entrenamiento td.col-stat.par, #tab-tour td.col-stat.par, #tab-ranking td.col-stat.par { color: var(--ent-ink); }
+#tab-entrenamiento td.col-stat.bog, #tab-tour td.col-stat.bog, #tab-ranking td.col-stat.bog { color: var(--ent-bogey); }
+#tab-entrenamiento td.col-stat.dbl, #tab-tour td.col-stat.dbl, #tab-ranking td.col-stat.dbl { color: var(--ent-doble); }
+#tab-entrenamiento th.col-stat-bir, #tab-tour th.col-stat-bir, #tab-ranking th.col-stat-bir { color: var(--ent-birdie) !important; }
+#tab-entrenamiento th.col-stat-bog, #tab-tour th.col-stat-bog, #tab-ranking th.col-stat-bog { color: var(--ent-bogey) !important; }
+#tab-entrenamiento th.col-stat-dbl, #tab-tour th.col-stat-dbl, #tab-ranking th.col-stat-dbl { color: var(--ent-doble) !important; }
 
-/* === Compactación: caber en 600px sin scroll (Torneos + Entrenamiento) === */
-#tab-entrenamiento table.scorecard, #tab-torneos table.scorecard, #tab-tour table.scorecard, #tab-ranking table.scorecard { font-size: 11px !important; }
-#tab-entrenamiento table.scorecard thead th, #tab-torneos table.scorecard thead th, #tab-tour table.scorecard thead th, #tab-ranking table.scorecard thead th { padding: 6px 1px !important; min-width: 22px !important; font-size: 9px !important; }
-#tab-entrenamiento table.scorecard thead th.col-jug, #tab-torneos table.scorecard thead th.col-jug, #tab-tour table.scorecard thead th.col-jug, #tab-ranking table.scorecard thead th.col-jug { padding-left: 25px !important; padding-right: 12px !important; min-width: 60px !important; letter-spacing: 0.8px !important; }
-#tab-entrenamiento table.scorecard thead th.col-tot, #tab-torneos table.scorecard thead th.col-tot, #tab-tour table.scorecard thead th.col-tot, #tab-ranking table.scorecard thead th.col-tot { min-width: 36px !important; letter-spacing: 0.5px !important; }
-#tab-entrenamiento table.scorecard thead th.col-stat, #tab-torneos table.scorecard thead th.col-stat, #tab-tour table.scorecard thead th.col-stat, #tab-ranking table.scorecard thead th.col-stat { min-width: 22px !important; font-size: 11px !important; }
-#tab-entrenamiento table.scorecard tbody td, #tab-torneos table.scorecard tbody td, #tab-tour table.scorecard tbody td, #tab-ranking table.scorecard tbody td { padding: 4px 1px !important; height: 28px !important; }
-#tab-entrenamiento td.col-jug, #tab-torneos td.col-jug, #tab-tour td.col-jug, #tab-ranking td.col-jug { padding-left: 25px !important; padding-right: 12px !important; font-size: 10px !important; letter-spacing: 0.6px !important; }
-#tab-entrenamiento .chip, #tab-torneos .chip, #tab-tour .chip, #tab-ranking .chip { min-width: 18px !important; height: 18px !important; padding: 0 3px !important; font-size: 10px !important; border-radius: 4px !important; }
-#tab-entrenamiento .chip-birdie, #tab-entrenamiento .chip-hio, #tab-torneos .chip-birdie, #tab-tour .chip-birdie, #tab-torneos .chip-hio, #tab-tour .chip-hio, #tab-ranking .chip-hio { width: 18px !important; }
-#tab-entrenamiento td.col-tot, #tab-torneos td.col-tot, #tab-tour td.col-tot, #tab-ranking td.col-tot { font-size: 12px !important; }
+/* === Compactación: caber en 600px sin scroll (Entrenamiento, Tour y Ranking) === */
+#tab-entrenamiento table.scorecard, #tab-tour table.scorecard, #tab-ranking table.scorecard { font-size: 11px !important; }
+#tab-entrenamiento table.scorecard thead th, #tab-tour table.scorecard thead th, #tab-ranking table.scorecard thead th { padding: 6px 1px !important; min-width: 22px !important; font-size: 9px !important; }
+#tab-entrenamiento table.scorecard thead th.col-jug, #tab-tour table.scorecard thead th.col-jug, #tab-ranking table.scorecard thead th.col-jug { padding-left: 25px !important; padding-right: 12px !important; min-width: 60px !important; letter-spacing: 0.8px !important; }
+#tab-entrenamiento table.scorecard thead th.col-tot, #tab-tour table.scorecard thead th.col-tot, #tab-ranking table.scorecard thead th.col-tot { min-width: 36px !important; letter-spacing: 0.5px !important; }
+#tab-entrenamiento table.scorecard thead th.col-stat, #tab-tour table.scorecard thead th.col-stat, #tab-ranking table.scorecard thead th.col-stat { min-width: 22px !important; font-size: 11px !important; }
+#tab-entrenamiento table.scorecard tbody td, #tab-tour table.scorecard tbody td, #tab-ranking table.scorecard tbody td { padding: 4px 1px !important; height: 28px !important; }
+#tab-entrenamiento td.col-jug, #tab-tour td.col-jug, #tab-ranking td.col-jug { padding-left: 25px !important; padding-right: 12px !important; font-size: 10px !important; letter-spacing: 0.6px !important; }
+#tab-entrenamiento .chip, #tab-tour .chip, #tab-ranking .chip { min-width: 18px !important; height: 18px !important; padding: 0 3px !important; font-size: 10px !important; border-radius: 4px !important; }
+#tab-entrenamiento .chip-birdie, #tab-entrenamiento .chip-hio, #tab-tour .chip-birdie, #tab-tour .chip-hio, #tab-ranking .chip-hio { width: 18px !important; }
+#tab-entrenamiento td.col-tot, #tab-tour td.col-tot, #tab-ranking td.col-tot { font-size: 12px !important; }
 
-#tab-entrenamiento .empty-state, #tab-torneos .empty-state, #tab-tour .empty-state, #tab-ranking .empty-state {
+#tab-entrenamiento .empty-state, #tab-tour .empty-state, #tab-ranking .empty-state {
   text-align: center;
   padding: 60px 24px;
   color: var(--ent-ink-muted);
@@ -692,17 +692,17 @@ input,select{font-size:11px;padding:3px 6px;border:1px solid #d1d5db;border-radi
   border: 1px dashed var(--ent-border-strong);
   border-radius: 12px;
 }
-#tab-entrenamiento .empty-state .ico, #tab-torneos .empty-state .ico, #tab-tour .empty-state .ico, #tab-ranking .empty-state .ico { font-size: 32px; margin-bottom: 12px; opacity: 0.5; }
-#tab-entrenamiento .empty-state h3, #tab-torneos .empty-state h3, #tab-tour .empty-state h3, #tab-ranking .empty-state h3 {
+#tab-entrenamiento .empty-state .ico, #tab-tour .empty-state .ico, #tab-ranking .empty-state .ico { font-size: 32px; margin-bottom: 12px; opacity: 0.5; }
+#tab-entrenamiento .empty-state h3, #tab-tour .empty-state h3, #tab-ranking .empty-state h3 {
   font-family: 'Fraunces', serif;
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 6px;
   color: var(--ent-ink);
 }
-#tab-entrenamiento .empty-state p, #tab-torneos .empty-state p, #tab-tour .empty-state p, #tab-ranking .empty-state p { font-size: 13px; }
+#tab-entrenamiento .empty-state p, #tab-tour .empty-state p, #tab-ranking .empty-state p { font-size: 13px; }
 
-#tab-entrenamiento .ent-foot, #tab-torneos .ent-foot, #tab-tour .ent-foot, #tab-ranking .ent-foot {
+#tab-entrenamiento .ent-foot, #tab-tour .ent-foot, #tab-ranking .ent-foot {
   text-align: center;
   margin-top: 60px;
   padding-top: 20px;
@@ -713,7 +713,7 @@ input,select{font-size:11px;padding:3px 6px;border:1px solid #d1d5db;border-radi
   text-transform: uppercase;
   font-weight: 600;
 }
-#tab-entrenamiento .ent-foot span, #tab-torneos .ent-foot span, #tab-tour .ent-foot span, #tab-ranking .ent-foot span { color: var(--ent-accent); }
+#tab-entrenamiento .ent-foot span, #tab-tour .ent-foot span, #tab-ranking .ent-foot span { color: var(--ent-accent); }
 
 /* Desplegables (details/summary) usados en Tramos y Hoyos */
 details.collapsible-section { transition: box-shadow 0.2s ease; }
@@ -793,6 +793,7 @@ details.collapsible-section > summary:hover { filter: brightness(0.97); }
       <div class="tab" data-tab="tour" onclick="showTab('tour',event)">🔥 Tour</div>
       <div class="tab" data-tab="matchplay" onclick="showTab('matchplay',event)">⚔️ Match Play</div>
       <div class="tab" data-tab="copa" onclick="showTab('copa',event)">🏆 Copa</div>
+      <div class="tab" data-tab="bolaoro" onclick="showTab('bolaoro',event)"><span class="tab-ico-bola"></span> Bola de oro</div>
       <div class="tab" data-tab="interclubs" onclick="showTab('interclubs',event)">🆚 Interclubs</div>
       <div class="tab" data-tab="ranking" onclick="showTab('ranking',event)">📊 Ranking</div>
       <div class="tab" data-tab="entrenamiento" onclick="showTab('entrenamiento',event)">🎯 Entrenamiento</div>
@@ -831,6 +832,7 @@ details.collapsible-section > summary:hover { filter: brightness(0.97); }
 <div id="tab-interclubs" class="content" style="display:none"></div>
 <div id="tab-ranking" class="content" style="display:none"></div>
 <div id="tab-copa" class="content" style="display:none"></div>
+<div id="tab-bolaoro" class="content" style="display:none"></div>
 <div id="tab-matchplay" class="content" style="display:none"></div>
 <div id="tab-entrenamiento" class="content" style="display:none"></div>
     <div id="tab-versus" class="content" style="display:none"></div>
@@ -923,6 +925,7 @@ const ICONO_BOLA_ORO = '<svg viewBox="0 0 16 16" width="1.2em" height="1.2em" st
   + [[5,8.6],[7.6,7],[10.4,6.4],[10.6,9.2],[8,10],[5.8,11.4],[8.6,12.6],[11.6,11.4],[12.4,7.6]]
       .map(p => '<circle cx="'+p[0]+'" cy="'+p[1]+'" r="0.8" fill="#8a6408" opacity="0.5"/>').join('')
   + '</svg>';
+document.querySelectorAll('.tab-ico-bola').forEach(function(e){ e.innerHTML = ICONO_BOLA_ORO; });
 const TITULOS_COMPETICIONES = [
   { id:'race', icon:'🏁', label:'IRON RACE',  src:null   },
   { id:'sl',   icon:'🥇', label:'Liga',       src:'sl'   },
@@ -954,25 +957,148 @@ function _ganadorCopa(anio){
   return (ed && ed.ganador) ? ed.ganador : null;
 }
 
-// Bola de oro de una temporada: quien más birdies suma entre `inicio` y `fin`,
-// en todas las actuaciones (solo hoyos reales: los de abandono no cuentan).
-// Con la temporada abierta, o con empate en cabeza, queda por decidir.
+// ── BOLA DE ORO ──
+// Contextos que suman, en el orden de las columnas de la pestaña. El Match Play
+// no cuenta. Cuenta todo hoyo de 2 o menos (birdie o mejor); el hole in one
+// (1 golpe) se lleva aparte porque es el desempate.
+const BOLA_CONTEXTOS = ['sl','sptr','copa','ic','rkg','ent'];
+const BOLA_GOLPES_MAX = PAR_HOYO - 1;   // birdie o mejor
+const BOLA_HIO = 1;                      // hole in one
+
+function _fechaES(s){ const [d,m,y] = s.split('/').map(Number); return new Date(y, m-1, d); }
+
+// Temporada que se muestra: la última de PALMARES (la más reciente).
+function _temporadaBola(){
+  return PALMARES.slice().sort(function(a,b){ return b.anio - a.anio; })[0] || null;
+}
+
+// Birdies de una temporada por jugador: { apodo: {jugador,total,hio,porCtx} }.
+// Solo hoyos reales (los rellenados por abandono no cuentan). Con la temporada
+// abierta (`fin` null) suma hasta hoy.
+function birdiesTemporada(fila){
+  const out = {};
+  if(!fila || !fila.inicio || typeof _recopilarActuacionesGlobal !== 'function') return out;
+  const ini = _fechaES(fila.inicio);
+  const fin = fila.fin ? _fechaES(fila.fin) : new Date();
+  fin.setHours(23,59,59);
+  const dentro = d => d instanceof Date && d >= ini && d <= fin;
+  const fichaDe = apo => out[apo] || (out[apo] = {
+    jugador:apo, total:0, hio:0,
+    porCtx:Object.fromEntries(BOLA_CONTEXTOS.map(k => [k, 0])) });
+  const suma = (apo, src, hoyos) => {
+    if(!BOLA_CONTEXTOS.includes(src) || !Array.isArray(hoyos)) return;
+    const r = fichaDe(apo);
+    hoyos.forEach(v => {
+      if(v == null || v > BOLA_GOLPES_MAX) return;
+      r.total++; r.porCtx[src]++;
+      if(v === BOLA_HIO) r.hio++;
+    });
+  };
+  (_recopilarActuacionesGlobal() || []).forEach(a => { if(dentro(a.fecha)) suma(a.jugador, a.src, a.hoyos); });
+
+  // Interclubs · parejas: no entran en el HCP, pero sus birdies sí suman.
+  // Si la prueba trae el hoyo a hoyo del jugador (p.hm[apodo]), manda la tarjeta.
+  // Si no, se usa lo que se pregunta al acabar el partido: los hoyos donde hizo
+  // birdie y los hoyos donde hizo hole in one.
+  //   birdiesPareja: { Marc:[3,11], David:[7] },  hioPareja: { Marc:[14] }
+  if(typeof IC_DATA !== 'undefined' && typeof apodoDesdeNombreIC === 'function'){
+    Object.values(IC_DATA).forEach(yd => (yd.pruebas || []).forEach(p => {
+      if(!p.fecha || !dentro(_fechaES(p.fecha))) return;
+      const indis = new Set([p.ind1, p.ind2].filter(Boolean)
+        .flatMap(x => [x[0], x[2]]).map(apodoDesdeNombreIC).filter(Boolean));
+      const deParejas = new Set();
+      [p.par1, p.par2].filter(Boolean).forEach(pr => [pr[0], pr[1]].forEach(n => {
+        const apo = apodoDesdeNombreIC(n);
+        if(apo && !indis.has(apo)) deParejas.add(apo);
+      }));
+      const bir = p.birdiesPareja || {}, hio = p.hioPareja || {};
+      // Avisos: anotado alguien que no jugó en pareja esa prueba.
+      Object.keys(bir).concat(Object.keys(hio)).forEach(apo => {
+        if(!deParejas.has(apo)) console.warn('[Bola de oro] IC ' + p.fecha + ': ' + apo + ' tiene birdies de pareja anotados pero no jugó en pareja.');
+      });
+      deParejas.forEach(apo => {
+        if(p.hm && p.hm[apo]){
+          const v = _vueltaConAbandono(p.hm[apo].slice(), _hoyoAbandono(p, apo));
+          suma(apo, 'ic', v.reales);
+          return;
+        }
+        const hB = Array.isArray(bir[apo]) ? bir[apo] : [];
+        const hH = Array.isArray(hio[apo]) ? hio[apo] : [];
+        const vistos = new Set(), hoyos = Array(N_HOYOS).fill(null);
+        [[hB, BOLA_GOLPES_MAX], [hH, BOLA_HIO]].forEach(([lista, golpes]) => lista.forEach(n => {
+          if(!Number.isInteger(n) || n < 1 || n > N_HOYOS || vistos.has(n)){
+            console.warn('[Bola de oro] IC ' + p.fecha + ' ' + apo + ': hoyo no válido o repetido (' + n + ').');
+            return;
+          }
+          vistos.add(n); hoyos[n-1] = golpes;
+        }));
+        suma(apo, 'ic', hoyos);
+      });
+    }));
+  }
+  return out;
+}
+
+// Orden de la Bola de oro: birdies → hole in ones. Lo que siga empatado, decide Capi.
+function _ordenBola(a, b){ return (b.total - a.total) || (b.hio - a.hio); }
+
+// Bola de oro de una temporada cerrada. Con la temporada abierta, o con empate
+// en birdies y hole in ones, queda por decidir.
 function _ganadorBola(fila){
-  if(!fila.inicio || !fila.fin || typeof _recopilarActuacionesGlobal !== 'function') return null;
-  const f = s => { const [d,m,y] = s.split('/').map(Number); return new Date(y, m-1, d); };
-  const ini = f(fila.inicio), fin = f(fila.fin); fin.setHours(23,59,59);
-  const suma = {};
-  (_recopilarActuacionesGlobal() || []).forEach(a => {
-    if(a.fecha instanceof Date && a.fecha >= ini && a.fecha <= fin && typeof a.bir === 'number')
-      suma[a.jugador] = (suma[a.jugador] || 0) + a.bir;
-  });
-  const orden = Object.entries(suma).sort((a,b) => b[1] - a[1]);
-  if(!orden.length || orden[0][1] === 0) return null;
-  if(orden[1] && orden[1][1] === orden[0][1]){
-    console.warn('[Bola de oro] Empate a ' + orden[0][1] + ' birdies en ' + fila.temporada + ': decide Capi.');
+  if(!fila.inicio || !fila.fin) return null;
+  const orden = Object.values(birdiesTemporada(fila)).sort(_ordenBola);
+  if(!orden.length || orden[0].total === 0) return null;
+  if(orden[1] && _ordenBola(orden[0], orden[1]) === 0){
+    console.warn('[Bola de oro] Empate a ' + orden[0].total + ' birdies y ' + orden[0].hio + ' HIO en ' + fila.temporada + ': decide Capi.');
     return null;
   }
-  return orden[0][0];
+  return orden[0].jugador;
+}
+
+// Pestaña Bola de oro: todos los jugadores del club, total y desglose por contexto.
+function renderBolaOro(el){
+  const fila = _temporadaBola();
+  const datos = fila ? birdiesTemporada(fila) : {};
+  const vacio = apo => ({ jugador:apo, total:0, hio:0, porCtx:Object.fromEntries(BOLA_CONTEXTOS.map(k => [k, 0])) });
+  const filas = EQUIPO.map(p => datos[p.apodo] || vacio(p.apodo))
+    .sort((a, b) => _ordenBola(a, b) || a.jugador.localeCompare(b.jugador, 'es'));
+  // Posición compartida en empate (birdies y HIO iguales).
+  filas.forEach((r, i) => { r.pos = (i > 0 && _ordenBola(filas[i-1], r) === 0) ? filas[i-1].pos : i + 1; });
+
+  const th = 'padding:7px 6px;border-bottom:1px solid #e5e7eb;font-size:10.5px;color:#6b7280;text-transform:uppercase;letter-spacing:0.4px;white-space:nowrap';
+  const td = 'padding:6px;border-bottom:1px solid #f1f1f1;text-align:center';
+  const num = (v, fuerte) => v ? (fuerte ? '<b>' + v + '</b>' : String(v)) : '<span style="color:#d1d5db">0</span>';
+
+  let h = '<div style="max-width:900px;margin:0 auto;padding:18px 12px">';
+  h += '<div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;margin-bottom:6px">'
+     + '<span style="font-size:15px;font-weight:800;color:#1a1a1a">' + ICONO_BOLA_ORO + ' Bola de oro</span>'
+     + (fila ? '<span style="font-size:11px;color:#94a3b8">Temporada ' + fila.temporada + ' · desde ' + fila.inicio
+        + (fila.fin ? ' hasta ' + fila.fin : ' · en curso') + '</span>' : '')
+     + '</div>';
+  h += '<div style="font-size:11.5px;color:#6b7280;margin-bottom:12px">Birdies o mejor en todos los contextos. Empate: más hole in ones (HIO).</div>';
+  h += '<div style="overflow-x:auto;background:#fff;border:1px solid #e5e7eb;border-radius:10px">';
+  h += '<table style="width:100%;border-collapse:collapse;font-size:12px">';
+  h += '<thead><tr style="background:#f9fafb">'
+     + '<th style="' + th + ';text-align:center;width:28px">#</th>'
+     + '<th style="' + th + ';text-align:left">Jugador</th>'
+     + '<th style="' + th + ';text-align:center;color:#8a6408">Total</th>'
+     + '<th style="' + th + ';text-align:center" title="Hole in one">HIO</th>'
+     + BOLA_CONTEXTOS.map(k => '<th style="' + th + ';text-align:center">' + CTX_INFO[k].icon + ' ' + CTX_INFO[k].label + '</th>').join('')
+     + '</tr></thead><tbody>';
+  filas.forEach(r => {
+    const lider = r.pos === 1 && r.total > 0;
+    h += '<tr' + (lider ? ' style="background:#fdf8e7"' : '') + '>'
+       + '<td style="' + td + ';font-weight:700;color:' + (lider ? '#8a6408' : '#9ca3af') + '">' + r.pos + '</td>'
+       + '<td style="' + td + ';text-align:left;white-space:nowrap"><span style="display:inline-block;width:12px;height:12px;border-radius:3px;vertical-align:-1px;margin-right:6px;background:' + (COLORS[r.jugador] || '#eee') + '"></span>' + r.jugador + '</td>'
+       + '<td style="' + td + ';font-size:13px;color:#8a6408">' + num(r.total, true) + '</td>'
+       + '<td style="' + td + '">' + num(r.hio) + '</td>'
+       + BOLA_CONTEXTOS.map(k => '<td style="' + td + '">' + num(r.porCtx[k]) + '</td>').join('')
+       + '</tr>';
+  });
+  h += '</tbody></table></div>';
+  h += '<div style="font-size:10.5px;color:#9ca3af;margin-top:8px">El Match Play no cuenta. Los hoyos rellenados por abandono tampoco.</div>';
+  h += '</div>';
+  el.innerHTML = h;
 }
 
 // Palmarés resuelto: por año, qué competiciones hubo y quién ganó cada una.
@@ -1120,6 +1246,7 @@ function renderTab(t){
   else if(t==='interclubs')renderInterclubs(el);
   else if(t==='ranking')renderRanking(el);
   else if(t==='copa')renderCopa(el);
+  else if(t==='bolaoro')renderBolaOro(el);
   else if(t==='matchplay')renderMatchPlay(el);
   else if(t==='entrenamiento')renderEntrenamiento(el);
   else if(t==='versus')renderVersus(el);
@@ -1841,7 +1968,6 @@ const CTX_INFO = {
   rkg:     { ajuste:0,    cap:null, icon:'📊',  lbl:'RKG',  label:'Ranking',          bg:'#f3e8ff', col:'#6b21a8' },
   copa:    { ajuste:0,    cap:null, icon:'🏆',  lbl:'COPA', label:'Copa',    bg:'#fce7f3', col:'#9d174d' },
   sl:      { ajuste:0.5,  cap:5,    icon:'🥇',  lbl:'SL',   label:'Liga',       bg:'#e0e7ff', col:'#3730a3' },
-  oficial: { ajuste:0.5,  cap:5,    icon:'🎖️', lbl:'OFI',  label:'Torneo Oficial',   bg:'#ffe4e6', col:'#9f1239' },
   // `historico`: ajustes que estuvieron vigentes ANTES de un cambio. Una vuelta
   // jugada hasta esa fecha (incluida) usa ese ajuste; a partir del día siguiente
   // rige el `ajuste` de arriba. Cambiar la regla no reescribe el pasado.
@@ -2726,7 +2852,7 @@ function countScoresFromArr(arr){
 
 // ───────────────────────────────────────────────────────────────────────
 // Tarjeta plegable de jornada — misma estética que las del entreno (.entreno-block).
-// La usan Ranking y Torneos para envolver cada jornada/torneo en un <details>
+// La usan Ranking y Tour para envolver cada jornada/torneo en un <details>
 // con summary (eyebrow + título + fecha + chevron) y body (la tabla).
 // ───────────────────────────────────────────────────────────────────────
 function renderJornadaCard(opts){
@@ -2860,7 +2986,7 @@ function _tarjetaHIO(hio, popupId){
 
 // ══════════════════════════════════════════════════════════════════════
 // renderStatsGlobal — alimentado por _recopilarActuacionesGlobal(): todas
-// las modalidades (ENT, Liga, Tour, IC, torneos, ranking, copa) y todos los campos.
+// las modalidades (ENT, Liga, Tour, IC, ranking, copa) y todos los campos.
 // Misma estructura: 6 tarjetas KPI + Media por jugador + Media por fecha.
 // Nada hardcoded: jugadores desde PLAYERS, colores desde COLORS.
 // ══════════════════════════════════════════════════════════════════════
@@ -3902,7 +4028,6 @@ function renderRadiografia(el, vueltas, campoKey){
 // 2) ajuste_contexto: rigor/mérito de la modalidad. Igual para todos, no depende del delta.
 //                     · IC        = 0     (referencia, medal play oficial)
 //                     · Ranking   = 0     (Millor Jugador de l'Any)
-//                     · Oficial   = 0.5   (Mulligans, etc.)
 //                     · Entreno   = 0.75  (entrenamientos en otros campos)
 //
 // ──────────────────────────────────────────────────────────────────────
@@ -3910,22 +4035,22 @@ function renderRadiografia(el, vueltas, campoKey){
 // ──────────────────────────────────────────────────────────────────────
 // Devuelve TODAS las actuaciones de un jugador (o de todos los activos si
 // jugador es null/undefined), unificando todas las fuentes: ENTRENAMIENTOS_DATA,
-// TORNEOS_DATA, RANKING_DATA, IC, COPA_DATA…
+// LIGA_DATA, TOUR_DATA, RANKING_DATA, IC, COPA_DATA…
 //
 // Esta función es la ÚNICA fuente de verdad para las actuaciones del HCP
 // Global. Tanto `calcHandicapGlobal` como `renderTablaGlobal` la consumen.
 // Si quieres añadir una nueva fuente de actuaciones, modifícala aquí.
 //
 // Cada actuación devuelta:
-//   { fecha:Date, src:'ent'|'ic'|'rkg'|'oficial'|'sptr'|'sl'|'copa',
+//   { fecha:Date, src:'ent'|'ic'|'rkg'|'sptr'|'sl'|'copa',
 //     campo:string, jugador:string, delta:number,
 //     hoyos:number[18]|null, bir:number, par:number, bog:number, dbl:number,
 //     j:number|null, abandono:boolean, abandonoHoyo:number|null }
 // ─── Abandonos ─────────────────────────────────────────────────────
 // Un abandono se marca en la estructura de la competición, junto a la
 // tarjeta, con el hoyo en que el jugador abandona (1-18):
-//     abandonos: { '<j>_<apodo>': 13 }   (Entrenamiento, Liga, Tour, Torneos)
-//     abandonos: { '<apodo>': 13 }       (Ranking, Interclubs, torneo sin jornadas)
+//     abandonos: { '<j>_<apodo>': 13 }   (Entrenamiento, Liga, Tour)
+//     abandonos: { '<apodo>': 13 }       (Ranking, Interclubs)
 //     abandono: 13                        (jugador de la Copa)
 // Ese hoyo y los siguientes cuentan GOLPES_ABANDONO cada uno para el total
 // (HCP y resultado); en las estadísticas hoyo a hoyo solo entran los reales.
@@ -3987,56 +4112,6 @@ function _recopilarActuacionesGlobal(jugador){
     });
   }
 
-  // ── Torneos oficiales ──
-  if(typeof TORNEOS_DATA !== 'undefined' && Array.isArray(TORNEOS_DATA)){
-    TORNEOS_DATA.forEach(t => {
-      if(!t.hm) return;
-      // Por defecto un torneo es oficial (+0.5). Una entrada puede declarar su
-      // propio `src`: el antiguo TOUR vive aquí como 'can_mascaro' y mantiene
-      // src:'sptr' para conservar el +1 de sus jornadas ya jugadas.
-      const _srcTorneo = t.src || 'oficial';
-      if(Array.isArray(t.jornadas) && t.jornadas.length > 0){
-        t.jornadas.forEach(jr => {
-          Object.keys(t.hm).forEach(key => {
-            const [jStr, apo] = key.split('_');
-            if(+jStr !== jr.j) return;
-            if(jugador && apo !== jugador) return;
-            const arr = t.hm[key];
-            const f = _parseF(jr.fecha);
-            if(!f || !arr) return;
-            const v = _vueltaConAbandono(arr, _hoyoAbandono(t, key));
-            const tot = sumaHoyos(v.calc, _srcTorneo);
-            const st = _stats(v.reales);
-            acts.push({
-              fecha:f, src:_srcTorneo, torneoId:t.id, campo:jr.campo || t.campo, jugador:apo,
-              delta:tot - PAR_CAMPO, hoyos:v.reales,
-              bir:st.bir, par:st.par, bog:st.bog, dbl:st.dbl,
-              j:jr.j, abandono:v.abandono, abandonoHoyo:v.abandonoHoyo,
-              recorrido: jr.recorrido || t.recorrido || 'FCPP',
-            });
-          });
-        });
-      } else {
-        Object.keys(t.hm).forEach(apo => {
-          if(jugador && apo !== jugador) return;
-          const arr = t.hm[apo];
-          const f = _parseF(t.fecha);
-          if(!f || !arr) return;
-          const v = _vueltaConAbandono(arr, _hoyoAbandono(t, apo));
-          const tot = sumaHoyos(v.calc, _srcTorneo);
-          const st = _stats(v.reales);
-          acts.push({
-            fecha:f, src:_srcTorneo, torneoId:t.id, campo:t.campo, jugador:apo,
-            delta:tot - PAR_CAMPO, hoyos:v.reales,
-            bir:st.bir, par:st.par, bog:st.bog, dbl:st.dbl,
-            j:null, abandono:v.abandono, abandonoHoyo:v.abandonoHoyo,
-            recorrido: t.recorrido || 'FCPP',
-          });
-        });
-      }
-    });
-  }
-
   // ── Liga (día SL_DIA, por puntos) ──
   // Misma estructura que TOUR_DATA, con src 'sl' (+0.5 y cap 5).
   if(typeof LIGA_DATA !== 'undefined' && Array.isArray(LIGA_DATA)){
@@ -4067,7 +4142,7 @@ function _recopilarActuacionesGlobal(jugador){
   }
 
   // ── Tour (quedadas internas) ──
-  // Misma estructura que TORNEOS_DATA pero src 'sptr' (+1 en vez de +0.5).
+  // Jornadas multi-campo con src 'sptr'. El ajuste sale de CTX_INFO.
   if(typeof TOUR_DATA !== 'undefined' && Array.isArray(TOUR_DATA)){
     TOUR_DATA.forEach(t => {
       if(!t.hm) return;
@@ -4405,7 +4480,6 @@ function calcHandicapGlobal(jugador, fechaCorte, forzarMediaParcial, alphaWeight
   //   ic      → 0     (referencia, medal play oficial)
   //   rkg     → 0     (Ranking — Millor Jugador de l'Any)
   //   copa    → 0     (Copa, medal play sin cap)
-  //   oficial → 0.5   (Torneos oficiales tipo Mulligans)
   //   ent     → 0.75  (entrenamientos en otros campos)
   //   sptr    → 0.5   (Tour)
   // Ejemplos:
@@ -4422,7 +4496,7 @@ function calcHandicapGlobal(jugador, fechaCorte, forzarMediaParcial, alphaWeight
     return ajusteRecorrido(nombreCampo, recorrido);
   }
 
-  // Entrenamientos + Torneos + Ranking + Interclubs + Copa:
+  // Entrenamientos + Liga + Tour + Ranking + Interclubs + Copa:
   // todas las fuentes ahora vienen de _recopilarActuacionesGlobal.
   const _actsRaw = _recopilarActuacionesGlobal(jugador);
   _actsRaw.forEach(a => acts.push({ fecha:a.fecha, delta:a.delta, src:a.src, campo:a.campo, recorrido:a.recorrido, torneoId:a.torneoId }));
@@ -4672,6 +4746,11 @@ function _htmlPestanasInstrucciones(){
       'Duelos uno contra uno, hoyo a hoyo: gana el hoyo quien hace menos golpes y gana el partido quien se lleva más hoyos. Formato de la competición por definir.' },
     { t: tabTxt('copa'), d:
       'El torneo individual del año. Todos salen el mismo día, a golpes (stroke play) y un único ganador. Si hay empate, desempate a muerte súbita.' + ctxTxt('copa') },
+    { t: ICONO_BOLA_ORO + ' ' + tabTxt('bolaoro'), d: (function(){
+      const l = BOLA_CONTEXTOS.map(k => CTX_INFO[k].label);
+      return 'El premio al jugador con más <b>birdies o mejor</b> de la temporada, sumando ' + l.slice(0,-1).join(', ') + ' y ' + l[l.length-1] + '. '
+        + 'En Interclubs cuentan individuales y parejas. <b>El Match Play no cuenta.</b> Solo suman los hoyos realmente jugados: los que se rellenan por abandono no. '
+        + 'Si hay empate, gana quien tenga más <b>hole in ones</b>; si siguen empatados, decide Capi.'; })() },
     { t: tabTxt('interclubs'), d:
       'La competición por equipos de la Federació, donde THE IRONS representa al club. Se juega a golpes reales con individuales y parejas; no todos los resultados puntúan (el peor individual y la peor pareja se descartan). '
       + 'Solo juegan los jugadores de equipo. La alineación la propone el sistema según hándicap, rendimiento en ese campo, entrenamientos, asistencia y adaptabilidad.' + ctxTxt('ic') },
@@ -5402,7 +5481,7 @@ function renderIronRace(el){
 // Muestra el primer día en que se "coronó" un campeón del HCP Global aplicando
 // un umbral más estricto que el oficial: ≥5 jugadores con n≥10 (en vez de ≥3).
 // Todo el cálculo es dinámico desde las fuentes (ENTRENAMIENTOS_DATA,
-// IC_DATA, RANKING_DATA, TORNEOS_DATA, COPA_DATA) vía calcHandicapGlobal.
+// IC_DATA, RANKING_DATA, LIGA_DATA, TOUR_DATA, COPA_DATA) vía calcHandicapGlobal.
 function renderBitacoraGlobal(el){
   const UMBRAL = UMBRAL_N1;
 
@@ -5967,7 +6046,7 @@ function renderTablaGlobal(el){
 }
 
 // ── Records Global ──────────────────────────────────────────────────────
-// Recoge TODAS las actuaciones de TODOS los contextos (ent/sl/sptr/oficial/
+// Recoge TODAS las actuaciones de TODOS los contextos (ent/sl/sptr/
 // rkg/ic/copa) vía _recopilarActuacionesGlobal, las ordena POR FECHA y calcula
 // la racha. Solo cuentan actuaciones desde 01/01/2026, igual que el resto del
 // HCP Global. "Doble dígito" = delta >= 10 (solo resultado final, sin hoyo a hoyo).
@@ -6118,7 +6197,7 @@ function renderMiscelania(el){
 
   // ── Partidos jugados por castas ──────────────────────────────────────
   // Cuenta TODAS las actuaciones de cada jugador en cualquier contexto
-  // (IC, ENT, Liga, Tour, Torneos, Copa, Ranking), todos los campos, con abandonos,
+  // (IC, ENT, Liga, Tour, Copa, Ranking), todos los campos, con abandonos,
   // sin filtro de fecha. Recuento bruto de participación.
   const partidosData = PLAYERS.map(jugador => ({
     jugador,
@@ -6288,7 +6367,7 @@ function renderMiscelania(el){
   // suman uno. Todos los contextos, todo el histórico. Canal Olímpic cuenta
   // como campo aquí (sólo está excluido de los récords globales).
   // Dos fuentes, porque el recolector global sólo lee los individuales de IC:
-  //   INDIS   → _recopilarActuacionesGlobal (ENT, Liga, Tour, torneos, ranking, copa, IC individual)
+  //   INDIS   → _recopilarActuacionesGlobal (ENT, Liga, Tour, ranking, copa, IC individual)
   //   PAREJAS → par1/par2 de IC_DATA, que no producen tarjeta individual y por eso
   //             se leen aquí aparte (NO se tocan HCP Global, Rendimiento ni Tabla).
   // TOTAL = unión de ambos conjuntos: un campo pisado de las dos formas cuenta una vez.
@@ -7681,7 +7760,6 @@ function renderTarjeta(el){
 
   // ---- estado ----
   let sel = [];               // apodos elegidos, en orden
-  const ABD = {};             // apodo -> hoyo del abandono (1-18)
   // La tarjeta recoge golpes reales, sin contexto ni cap: sirve para cualquier
   // competición. El cap se aplica después, al insertarla en su estructura.
   const TJ_MAX_GOLPES = 99;   // tope del botón +, igual que el rango del Excel (1-99)
@@ -7696,6 +7774,13 @@ function renderTarjeta(el){
     return n? s : null;
   };
   const completo = jug => G[jug].every(v=>v!==null);
+  // Delta vs par de los hoyos ya apuntados: se va calculando hoyo a hoyo.
+  const delta = jug => {
+    let d=0,n=0;
+    G[jug].forEach(v=>{ if(v!==null){ d+=v-PAR_HOYO; n++; } });
+    return n? d : null;
+  };
+  const fmtDelta = d => d===null ? '—' : (d>0 ? '+'+d : String(d));
 
   el.innerHTML = `
 <style>
@@ -7708,9 +7793,6 @@ function renderTarjeta(el){
 #tab-tarjeta .tj-fields input,#tab-tarjeta .tj-fields select{
   width:100%;height:38px;border:0;border-radius:12px;background:#eef0f4;
   font-family:inherit;font-size:14px;font-weight:500;color:#1e2438;padding:0 12px}
-#tab-tarjeta .tj-badge{flex:0 0 76px;background:#e6f4ef;border-radius:14px;padding:8px 4px;text-align:center}
-#tab-tarjeta .tj-badge b{display:block;font-size:19px;font-weight:700;color:#0f766e;line-height:1.1;font-variant-numeric:tabular-nums}
-#tab-tarjeta .tj-badge span{font-size:9px;letter-spacing:.1em;color:#5f8d83;font-weight:600}
 #tab-tarjeta .tj-lbl{font-size:11px;letter-spacing:.14em;font-weight:700;color:#8a93a5;margin-bottom:10px}
 #tab-tarjeta .tj-chips{display:flex;flex-wrap:wrap;gap:6px}
 #tab-tarjeta .tj-chip{height:34px;padding:0 13px;border:0;border-radius:11px;background:#eef0f4;
@@ -7753,9 +7835,7 @@ function renderTarjeta(el){
 #tab-tarjeta .tj-nav{display:flex;gap:6px;margin-bottom:8px}
 #tab-tarjeta .tj-nav button{flex:1;height:38px;border:0;border-radius:12px;background:#f4f5f7;
   font-family:inherit;font-size:13px;font-weight:600;color:#5b6578;cursor:pointer}
-#tab-tarjeta .tj-nav button.del{color:#b91c1c;flex:0 0 60px}
-#tab-tarjeta .tj-nav button.abd{color:#b91c1c;flex:0 0 92px}
-#tab-tarjeta .tj-cel.relleno{background:#f4f5f7;color:#a8b0bf;font-style:italic}
+#tab-tarjeta .tj-nav button.baja{flex:0 0 72px;font-size:20px;color:#1e2438;background:#e6f4ef}
 #tab-tarjeta .tj-acc{display:flex;gap:8px}
 #tab-tarjeta .tj-acc button{flex:1;height:46px;border:0;border-radius:14px;font-family:inherit;
   font-size:14px;font-weight:700;cursor:pointer}
@@ -7786,8 +7866,11 @@ function renderTarjeta(el){
               +'>'+c.campo+' · '+r+'</option>').join('')
           +'</optgroup>').join('')}
       </select>
+      <select id="tjCtx">
+        <option value="">Contexto…</option>
+        ${Object.entries(ctxActivos()).map(([k,c])=>'<option value="'+k+'">'+c.icon+' '+c.label+'</option>').join('')}
+      </select>
     </div>
-    <div class="tj-badge"><b id="tjMejor">—</b><span>MEJOR</span></div>
   </div>
 
   <div class="tj-card">
@@ -7811,8 +7894,7 @@ function renderTarjeta(el){
     </div>
     <div class="tj-nav">
       <button type="button" id="tjAnt">← Ant</button>
-      <button type="button" class="del" id="tjDel">✕</button>
-      <button type="button" class="abd" id="tjAbd" title="El jugador activo abandona en este hoyo">Abandona</button>
+      <button type="button" class="baja" id="tjBaja" title="Mismo hoyo, siguiente jugador">↓</button>
       <button type="button" id="tjSig">Sig →</button>
     </div>
     <div class="tj-acc">
@@ -7867,13 +7949,11 @@ function renderTarjeta(el){
         const v=G[jug][i];
         let cls='tj-cel';
         if(act && act.jug===jug && act.h===i) cls+=' act';
-        if(ABD[jug] && i>=ABD[jug]-1) cls+=' relleno';
-        else if(v!==null){ if(v<=UMBRAL_BIR)cls+=' bir'; else if(v===UMBRAL_BOG)cls+=' bog'; else if(v>=UMBRAL_DBL)cls+=' dbl'; }
+        if(v!==null){ if(v<=UMBRAL_BIR)cls+=' bir'; else if(v===UMBRAL_BOG)cls+=' bog'; else if(v>=UMBRAL_DBL)cls+=' dbl'; }
         h+='<td><button type="button" class="'+cls+'" data-j="'+jug+'" data-h="'+i+'">'
           +(v===null?'':String(v))+'</button></td>';
       }
-      const s=suma(jug);
-      h+='<td class="tj-sum">'+(s===null?'—':s)+'</td></tr>';
+      h+='<td class="tj-sum">'+fmtDelta(delta(jug))+'</td></tr>';
     });
     return h;
   }
@@ -7884,8 +7964,6 @@ function renderTarjeta(el){
     el.querySelectorAll('.tj-cel').forEach(b=>b.addEventListener('click',()=>{
       act={jug:b.dataset.j,h:+b.dataset.h}; pinta();
     }));
-    const tot = sel.filter(completo).map(suma);
-    $('#tjMejor').textContent = tot.length ? Math.min(...tot) : '—';
     $('#tjNow').innerHTML = act
       ? '<b>'+act.jug+'</b> · hoyo <b>'+(act.h+1)+'</b>'
       : (sel.length ? 'Toca una casilla para empezar' : 'Elige jugadores para empezar');
@@ -7903,12 +7981,28 @@ function renderTarjeta(el){
     act={jug:sel[idx],h}; pinta();
   }
 
+  // Sig →: hoyo siguiente del mismo jugador. Desde el último jugador, salta al
+  // primer jugador del hoyo siguiente (del 18 vuelve al 1).
+  function siguiente(){
+    if(!act || !sel.length) return;
+    if(sel.indexOf(act.jug) === sel.length-1){ act={jug:sel[0], h:(act.h+1)%N_HOYOS}; pinta(); }
+    else mover(1);
+  }
+
+  // ↓: mismo hoyo, siguiente jugador. Desde el último, primer jugador del hoyo
+  // siguiente (y del 18 vuelve al 1). Así se rellena hoyo a hoyo.
+  function bajar(){
+    if(!act || !sel.length) return;
+    let idx=sel.indexOf(act.jug)+1, h=act.h;
+    if(idx>=sel.length){ idx=0; h=(h+1)%N_HOYOS; }
+    act={jug:sel[idx],h}; pinta();
+  }
+
   function bump(d){
     if(!act){ msg.className='tj-msg'; msg.textContent='Toca primero una casilla.'; return; }
     msg.textContent='';
-    if(ABD[act.jug] && act.h>=ABD[act.jug]-1){ msg.className='tj-msg'; msg.textContent='Ese hoyo es de abandono. Pulsa Abandona para deshacerlo.'; return; }
     const v=G[act.jug][act.h];
-    if(v===null){ G[act.jug][act.h]=3; }              // primer toque → par
+    if(v===null){ G[act.jug][act.h] = d>0 ? PAR_HOYO : PAR_HOYO-1; }   // casilla vacía: + → par, − → birdie
     else { G[act.jug][act.h]=Math.max(1,Math.min(TJ_MAX_GOLPES,v+d)); }
     pinta();
   }
@@ -7917,7 +8011,7 @@ function renderTarjeta(el){
     const j=c.dataset.j;
     if(sel.includes(j)){
       sel=sel.filter(x=>x!==j);
-      G[j]=new Array(18).fill(null); delete ABD[j];
+      G[j]=new Array(18).fill(null);
       if(act && act.jug===j) act = sel.length ? {jug:sel[0],h:0} : null;
     }else{
       sel.push(j);
@@ -7929,25 +8023,11 @@ function renderTarjeta(el){
   $('#tjMas').addEventListener('click',()=>bump(1));
   $('#tjMenos').addEventListener('click',()=>bump(-1));
   $('#tjAnt').addEventListener('click',()=>mover(-1));
-  $('#tjSig').addEventListener('click',()=>mover(1));
-  $('#tjDel').addEventListener('click',()=>{ if(act){G[act.jug][act.h]=null;pinta();} });
-  // Abandona: desde el hoyo activo hasta el 18, GOLPES_ABANDONO en cada uno.
-  // Pulsarlo otra vez sobre el mismo jugador lo deshace.
-  $('#tjAbd').addEventListener('click',()=>{
-    if(!act){ msg.className='tj-msg'; msg.textContent='Toca primero la casilla del hoyo en que abandona.'; return; }
-    const j=act.jug;
-    if(ABD[j]){
-      for(let i=ABD[j]-1;i<18;i++) G[j][i]=null;
-      delete ABD[j];
-    }else{
-      ABD[j]=act.h+1;
-      for(let i=act.h;i<18;i++) G[j][i]=GOLPES_ABANDONO;
-    }
-    msg.textContent=''; pinta();
-  });
+  $('#tjSig').addEventListener('click',siguiente);
+  $('#tjBaja').addEventListener('click',bajar);
 
   $('#tjNew').addEventListener('click',()=>{
-    sel=[]; act=null; JUGS.forEach(j=>{ G[j]=new Array(18).fill(null); delete ABD[j]; });
+    sel=[]; act=null; JUGS.forEach(j=>{ G[j]=new Array(18).fill(null); });
     out.value=''; btnCopy.disabled=true; msg.className='tj-msg'; msg.textContent=''; pinta();
   });
 
@@ -7956,6 +8036,8 @@ function renderTarjeta(el){
     const campoVal=$('#tjCampo').value;
     if(!campoVal){ msg.className='tj-msg'; msg.textContent='Elige el campo.'; out.value=''; btnCopy.disabled=true; return; }
     const [campo, recorrido] = campoVal.split('|');
+    const ctx=$('#tjCtx').value;
+    if(!ctx){ msg.className='tj-msg'; msg.textContent='Elige el contexto.'; out.value=''; btnCopy.disabled=true; return; }
     const faltan=sel.filter(j=>!completo(j));
     if(faltan.length){
       msg.className='tj-msg';
@@ -7965,8 +8047,8 @@ function renderTarjeta(el){
     const iso=$('#tjFecha').value;
     const fecha = iso ? iso.slice(8,10)+'/'+iso.slice(5,7)+'/'+iso.slice(0,4) : '';
     const orden=[...sel].sort((a,b)=>suma(a)-suma(b));
-    const L=['=== TARJETA INICIO ===','fecha='+fecha,'campo='+campo,'recorrido='+recorrido,''];
-    orden.forEach(j=>L.push('jugador='+j+' hoyos='+G[j].join(' ')+(ABD[j]?' abandono='+ABD[j]:'')));
+    const L=['=== TARJETA INICIO ===','fecha='+fecha,'campo='+campo,'recorrido='+recorrido,'contexto='+ctx,''];
+    orden.forEach(j=>L.push('jugador='+j+' hoyos='+G[j].join(' ')));
     L.push('=== TARJETA FIN ===');
     out.value=L.join('\n');
     msg.className='tj-msg ok'; msg.textContent='Tarjeta generada.';
@@ -8335,19 +8417,10 @@ function renderRanking(el){
 }
 
 // ═══════════════════════════════════════════════════════════════════════
-// TORNEOS OFICIALES — datos cargados manualmente por Capi
-// ═══════════════════════════════════════════════════════════════════════
-// Estructura: cada torneo tiene { id, nombre, campo, fecha, hm: { Jugador: [18 hoyos] } }
-// Factor 0.06 en el cálculo del HCP global (cuando se conecte).
-const TORNEOS_DATA = [];
-
-// ═══════════════════════════════════════════════════════════════════════
 // TOUR — quedadas internas del equipo (mínimo 3 jugadores)
 // ═══════════════════════════════════════════════════════════════════════
-// NO es un torneo oficial: es una quedada entre nosotros. Por eso vive en su
-// propia pestaña y no en Torneos, y por eso su src es 'sptr' (ajuste +1) en
-// vez de 'oficial' (+0.5). Misma estructura que TORNEOS_DATA: multi-campo,
-// el campo lo define cada jornada (jr.campo).
+// Quedada entre nosotros, con src 'sptr'. Multi-campo: el campo lo define
+// cada jornada (jr.campo).
 // ═════════════════════════════════════════════════════════════════
 // LIGA — liga semanal (día SL_DIA), por PUNTOS.
 // La juegan miembros del equipo y socios del club.
@@ -8494,7 +8567,6 @@ function _clasificacionSL(){
   return { jornadas, tabla };
 }
 
-// TOUR_DATA se ha integrado en TORNEOS_DATA como 'can_mascaro'.
 const TOUR_DATA = [];
 
 // ═══════════════════════════════════════════════════════════════════════
@@ -8510,19 +8582,13 @@ const MATCHPLAY_DATA = [];
 
 const COPA_DATA = [];
 
-function renderTorneos(el){ _renderListaTorneos(el, TORNEOS_DATA, {
-    icono:'🏆', vacioTitulo:'Aún no hay torneos oficiales',
-    vacioTexto:'Cuando Capi alimente el primer torneo oficial, aparecerá aquí.',
-    eyebrow:'', eyebrowPlano:'',
-    pie:'Torneos oficiales' }); }
-
 function renderTour(el){ _renderListaTorneos(el, TOUR_DATA, {
     icono:'🔥', vacioTitulo:'Aún no hay Tours',
     vacioTexto:'Cuando Capi alimente el primer Tour, aparecerá aquí.',
     eyebrow:'', eyebrowPlano:'',
     pie:'Tour · quedadas internas' }); }
 
-// Render compartido por Torneos y Tour: misma estructura de datos,
+// Render de la lista del Tour: misma estructura de datos,
 // solo cambian los rótulos. cfg trae icono, textos y pie.
 function _renderListaTorneos(el, DATOS, cfg){
   if(!Array.isArray(DATOS) || DATOS.length === 0){
@@ -8961,7 +9027,7 @@ function _renderListaTorneos(el, DATOS, cfg){
   //   · Top 4 sub-INDI → Indis. De los 4 restantes → Parejas.
 
   // Asistencia 6 semanas: nº de partidos jugados en cualquier contexto
-  // (ENT + IC + Torneos + Ranking) en los últimos 42 días.
+  // (ENT + IC + Ranking) en los últimos 42 días.
   function calcAsist6Sem(jugador){
     const hoy = new Date();
     const hace6sem = new Date(hoy.getTime() - 42 * 24 * 60 * 60 * 1000);
@@ -8987,15 +9053,6 @@ function _renderListaTorneos(el, DATOS, cfg){
           if(p.ind2) indis.push({n:p.ind2[0]}, {n:p.ind2[2]});
           if(indis.some(x => apodoDesdeNombreIC(x.n) === jugador)) count++;
         });
-      });
-    }
-    // Torneos
-    if(typeof TORNEOS_DATA !== 'undefined'){
-      TORNEOS_DATA.forEach(t => {
-        if(!t.fecha) return;
-        const [d,mo,y] = t.fecha.split('/');
-        if(new Date(+y, +mo-1, +d) < hace6sem) return;
-        (t.resultados || []).forEach(r => { if(r.jugador === jugador) count++; });
       });
     }
     // Ranking
@@ -9061,7 +9118,7 @@ function _renderListaTorneos(el, DATOS, cfg){
   }
 
   // Birdies/ronda global: promedio de birdies/ronda en las últimas 10 actuaciones
-  // (ENT + Torneos). IC y Ranking suelen no tener detalle por hoyo.
+  // (ENT). IC y Ranking suelen no tener detalle por hoyo.
   // Calculamos de forma directa: contamos birdies en las rondas más recientes.
   function calcBirdiesGlobal(jugador, maxRondas){
     maxRondas = maxRondas || 10;
@@ -9075,18 +9132,6 @@ function _renderListaTorneos(el, DATOS, cfg){
         const birds = arr.filter(v => v <= 2).length;
         todas.push({ fecha: new Date(+y, +mo-1, +d), birdies: birds });
       }));
-    }
-    // Torneos (si tienen hm por hoyos no tenemos acceso fácil; usamos bir si está)
-    if(typeof TORNEOS_DATA !== 'undefined'){
-      TORNEOS_DATA.forEach(t => {
-        if(!t.fecha) return;
-        const [d,mo,y] = t.fecha.split('/');
-        const fecha = new Date(+y, +mo-1, +d);
-        (t.resultados || []).forEach(r => {
-          if(r.jugador !== jugador) return;
-          if(r.bir !== undefined && r.bir !== null) todas.push({ fecha, birdies: r.bir });
-        });
-      });
     }
     if(todas.length === 0) return null;
     todas.sort((a,b) => b.fecha - a.fecha);
@@ -9500,7 +9545,7 @@ function _renderListaTorneos(el, DATOS, cfg){
 
   function renderScoreCell(v){
     if(v === null || v === undefined) return '<span style="color:#ccc;font-size:11px">—</span>';
-    // Mismo esquema visual que Tabla Global + Torneos
+    // Mismo esquema visual que Tabla Global + Tour
     if(v <= 2){
       return `<span style="display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;border-radius:50%;background:#65d000;color:#fff;font-weight:700;font-size:11px">${v}</span>`;
     }
